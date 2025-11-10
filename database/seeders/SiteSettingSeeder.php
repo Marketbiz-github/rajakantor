@@ -142,7 +142,8 @@ class SiteSettingSeeder extends Seeder
             <img src="https://www.rajakantor.com/themes/marketbiz-theme/img/tokopedia_logo.png" width="150">
             </a>
         </p>',
-            'wa_link' => 'https://wa.me/628161360607?text=Selamat%20datang%20di%20Raja%20Kantor%20\nSilahkan%20chat%20jika%20ada%20yang%20ingin%20ditanyakan?',
+            'wa' => '628161360607',
+            'wa_order' => '628161360607',
             'slider' => json_encode(['images/slide/slider1.png', 'images/slide/slider2.png', 'images/slide/slider3.png']),
             'banner_sidebar' => 'images/banner/LAYANAN-PENGADUAN.jpg',
             'banner_home_top' => 'images/banner/BANNER WEB 16 THN.jpg',

@@ -8,7 +8,7 @@
 
     <div class="p-4 text-[13px] text-[#444]">
       <img src="{{ asset($siteSettings->banner_home_top) }}" alt="Banner Top" class="w-full mb-4" />
-      <p>{!! ($siteSettings->home_description) !!}</p>
+      <p class="prose text-gray-700 [&_*]:text-xs">{!! ($siteSettings->home_description) !!}</p>
 
       {{-- PRODUCTS DISPLAY --}}
       <div class="mt-6">
@@ -22,8 +22,8 @@
             @php $img = $product->images[0] ?? null; @endphp
             <div class="font-bold text-[#333] mt-1">{{ $product->name }}</div>
             <img src="{{ $img ? asset($img) : asset('images/product/en.jpg') }}" alt="{{ $product->name }}"
-                  class="w-[72px] h-[72px] object-contain mx-auto my-2" />
-            <a href="#" class="text-xs text-gray-600 hover:underline mt-1 block font-bold">View</a>
+                  class="w-[72px] h-[72px] object-contain mx-auto mt-2 mb-4" />
+            <a href="{{ url('/product/'.$product->id_product.'-'.$product->slug) }}" class="text-xs text-gray-600 hover:underline mt-1 block"><i class="fa-solid fa-eye mr-1"></i> View</a>
           </div>
           @endforeach
         </div>

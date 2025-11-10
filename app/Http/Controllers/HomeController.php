@@ -43,4 +43,33 @@ class HomeController extends Controller
         // dd($siteSettings, $products);
         return view('home', compact('siteSettings', 'products'));
     }
+
+    public function contact()
+    {
+        $siteSettings = SiteSetting::first();
+        return view('contact', compact('siteSettings'));
+    }
+
+    public function about()
+    {
+        $siteSettings = SiteSetting::first();
+        return view('about', compact('siteSettings'));
+    }
+
+    public function terms()
+    {
+        $siteSettings = SiteSetting::first();
+        return view('terms', compact('siteSettings'));
+    }
+
+    public function client()
+    {
+        $siteSettings = SiteSetting::first();
+        return view('client', compact('siteSettings'));
+    }
+
+    public function blog()
+    {
+        return redirect()->away('https://blog.rajakantor.com');
+    }
 }

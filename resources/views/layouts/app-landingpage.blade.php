@@ -42,32 +42,32 @@
   <nav class="bg-white">
     <ul class="flex gap-2 p-[8px_12px] list-none m-0">
       <li>
-        <a href="#" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
+        <a href="{{ route('home') }}" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
           HOME
         </a>
       </li>
       <li>
-        <a href="#" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
+        <a href="{{ route('about') }}" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
           ABOUT US
         </a>
       </li>
       <li>
-        <a href="#" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
+        <a href="{{ route('blog') }}" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
           BLOG
         </a>
       </li>
       <li>
-        <a href="#" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
+        <a href="{{ route('product.promo') }}" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
           PROMO
         </a>
       </li>
       <li>
-        <a href="#" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
+        <a href="https://www.youtube.com/watch?v=n7XvnXJ70co" target="blank" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
           YOUTUBE
         </a>
       </li>
       <li>
-        <a href="#" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
+        <a href="https://katalog.inaproc.id/raja-batavia-perkasa" target="blank" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
           E KATALOG
         </a>
       </li>
@@ -142,7 +142,7 @@
                     @else
                       <span class="w-4"></span>
                     @endif
-                    <a href="#" class="text-[#15314b] hover:underline">{{ $category['name'] }}</a>
+                    <a href="{{ url('/category/'.$category['id_category'].'-'.$category['slug']) }}" class="text-[#15314b] hover:underline">{{ $category['name'] }}</a>
                   </div>
                   
                   @if(!empty($category['children']))
@@ -169,7 +169,7 @@
                             @else
                               <span class="w-4"></span>
                             @endif
-                            <a href="#" class="text-[#15314b] hover:underline">{{ $subCategory['name'] }}</a>
+                            <a href="{{ url('/category/'.$subCategory['id_category'].'-'.$subCategory['slug']) }}" class="text-[#15314b] hover:underline">{{ $subCategory['name'] }}</a>
                           </div>
 
                           @if(!empty($subCategory['children']))
@@ -184,7 +184,7 @@
                             >
                               @foreach($subCategory['children'] as $subSubCategory)
                                 <li>
-                                  <a href="#" class="text-[#15314b] hover:underline">{{ $subSubCategory['name'] }}</a>
+                                  <a href="{{ url('/category/'.$subSubCategory['id_category'].'-'.$subSubCategory['slug']) }}" class="text-[#15314b] hover:underline">{{ $subSubCategory['name'] }}</a>
                                 </li>
                               @endforeach
                             </ul>
@@ -275,7 +275,7 @@
                   <img src="{{ asset($p['image'] ?? 'images/no-image.png') }}" alt="{{ $p['name'] }}" class="w-full h-full object-cover" />
                 </div>
                 <div class="text-xs">
-                  <a href="{{ url('/product/'.$p['slug']) }}" class="text-[#15314b] hover:underline">{{ $p['name'] }}</a>
+                  <a href="{{ url('/product/'.$p['id_product'].'-'.$p['slug']) }}" class="text-[#15314b] hover:underline">{{ $p['name'] }}</a>
                 </div>
               </li>
             @endforeach
@@ -289,17 +289,24 @@
 
       <div class="bg-white p-3">
         <h5 class="mb-2 text-[14px] text-[#333] border-b-4 border-gray-200 pb-1">SEARCH</h5>
-        <div class="flex items-center gap-2 py-1.5">
+
+        <form action="{{ route('product.search') }}" method="GET" class="flex items-center gap-2 py-1.5">
           <input
+            type="text"
+            name="q"
+            value="{{ request('q') }}"
             placeholder="Enter a product name"
             class="flex-1 p-2 text-sm rounded-sm border border-gray-300 w-[50px]"
+            required
           />
           <button
+            type="submit"
             class="py-2 px-4 bg-[#cf6a00] text-white text-sm font-semibold hover:bg-[#b94f00] transition rounded-sm whitespace-nowrap">
             GO
           </button>
-        </div>
+        </form>
       </div>
+
 
 
       <div class="h-3"></div>
@@ -308,8 +315,10 @@
       <div class="bg-white p-3 text-[13px] leading-relaxed">
         <h4 class="text-[15px] font-semibold mb-2 border-b-4 border-gray-200 pb-2">Information</h4>
 
-        {{-- Use information from site settings (HTML) --}}
-        {!! $siteSettings->information ?? '<p class="ml-3">No information available.</p>' !!}
+        <div class="prose text-gray-700 [&_*]:text-xs">
+          {!! $siteSettings->information ?? '<p class="ml-3">No information available.</p>' !!}
+        </div>
+        
       </div>
     </aside>
   </div>
@@ -317,11 +326,11 @@
   {{-- FOOTER --}}
   <footer class="bg-white border-t-2 border-gray-300 px-4 py-3 text-[11px] text-gray-600">
     <div class="space-x-1 mb-1 font-bold">
-      <a href="#" class="hover:text-gray-800">Home</a> |
-      <a href="#" class="hover:text-gray-800">Contact us</a> |
-      <a href="#" class="hover:text-gray-800">Terms and conditions of use</a> |
-      <a href="#" class="hover:text-gray-800">About Us</a> |
-      <a href="#" class="hover:text-gray-800">Our Clients</a> |
+      <a href="{{ route('home') }}" class="hover:text-gray-800">Home</a> |
+      <a href="{{ route('contact') }}" class="hover:text-gray-800">Contact us</a> |
+      <a href="{{ route('terms') }}" class="hover:text-gray-800">Terms and conditions of use</a> |
+      <a href="{{ route('about') }}" class="hover:text-gray-800">About Us</a> |
+      <a href="{{ route('client') }}" class="hover:text-gray-800">Our Clients</a> |
       <span>Copyright © rajakantor.com</span>
     </div>
 
@@ -330,6 +339,16 @@
     </div>
   </footer>
 
+  {{-- Floating WhatsApp Button --}}
+  <a 
+    href="https://wa.me/{{ $siteSettings->wa ?? '' }}?text={{ urlencode('Selamat datang di Raja Kantor' . PHP_EOL . 'Silahkan chat jika ada yang ingin ditanyakan') }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-40 flex items-center justify-center w-16 h-16 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition hover:scale-110 duration-200"
+    title="Chat dengan kami di WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
 
 </div>
 </body>

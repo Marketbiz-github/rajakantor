@@ -21,7 +21,8 @@ return new class extends Migration
             $table->text('meta_keywords')->nullable();
             $table->text('about')->nullable();
             $table->text('information')->nullable();
-            $table->string('wa_link')->nullable();
+            $table->string('wa')->nullable();
+            $table->string('wa_order')->nullable();
             $table->json('slider')->nullable();
             $table->text('home_description')->nullable();
             $table->string('banner_sidebar')->nullable();
