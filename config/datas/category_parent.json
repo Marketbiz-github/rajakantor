@@ -1,0 +1,5066 @@
+[
+  {
+    "id_category": "1",
+    "id_parent": "0",
+    "level_depth": "0",
+    "status": "1",
+    "created_at": "16/11/2009 23:52",
+    "updated_at": "16/11/2009 23:52"
+  },
+  {
+    "id_category": "6",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "20/11/2009 00:53",
+    "updated_at": "13/08/2019 19:47"
+  },
+  {
+    "id_category": "42",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "13/12/2009 00:34",
+    "updated_at": "07/10/2024 21:01"
+  },
+  {
+    "id_category": "5",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "20/11/2009 00:51",
+    "updated_at": "13/08/2019 21:43"
+  },
+  {
+    "id_category": "8",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "20/11/2009 17:04",
+    "updated_at": "13/08/2019 21:31"
+  },
+  {
+    "id_category": "43",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "13/12/2009 00:36",
+    "updated_at": "24/11/2019 21:44"
+  },
+  {
+    "id_category": "990",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "08/10/2019 21:13",
+    "updated_at": "12/12/2019 19:28"
+  },
+  {
+    "id_category": "13",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "04/12/2009 00:48",
+    "updated_at": "10/10/2023 00:15"
+  },
+  {
+    "id_category": "31",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "12/12/2009 22:58",
+    "updated_at": "13/08/2019 21:27"
+  },
+  {
+    "id_category": "32",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "12/12/2009 22:59",
+    "updated_at": "13/08/2019 21:40"
+  },
+  {
+    "id_category": "26",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "12/12/2009 22:13",
+    "updated_at": "09/10/2023 23:56"
+  },
+  {
+    "id_category": "642",
+    "id_parent": "32",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 22:57",
+    "updated_at": "18/05/2015 22:57"
+  },
+  {
+    "id_category": "28",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "12/12/2009 22:16",
+    "updated_at": "09/10/2023 23:46"
+  },
+  {
+    "id_category": "643",
+    "id_parent": "214",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2015 00:11",
+    "updated_at": "19/05/2015 00:11"
+  },
+  {
+    "id_category": "30",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "12/12/2009 22:25",
+    "updated_at": "10/10/2023 00:14"
+  },
+  {
+    "id_category": "33",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "12/12/2009 23:02",
+    "updated_at": "13/08/2019 22:35"
+  },
+  {
+    "id_category": "34",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "12/12/2009 23:03",
+    "updated_at": "13/08/2019 21:49"
+  },
+  {
+    "id_category": "45",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "13/12/2009 00:42",
+    "updated_at": "27/01/2015 20:55"
+  },
+  {
+    "id_category": "46",
+    "id_parent": "45",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "13/12/2009 00:43",
+    "updated_at": "27/01/2015 21:06"
+  },
+  {
+    "id_category": "48",
+    "id_parent": "45",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "13/12/2009 00:49",
+    "updated_at": "27/01/2015 21:15"
+  },
+  {
+    "id_category": "765",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/09/2016 19:08",
+    "updated_at": "04/10/2016 21:45"
+  },
+  {
+    "id_category": "766",
+    "id_parent": "765",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 19:08",
+    "updated_at": "04/10/2016 22:44"
+  },
+  {
+    "id_category": "62",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/12/2009 18:36",
+    "updated_at": "13/08/2019 02:23"
+  },
+  {
+    "id_category": "637",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 19:28",
+    "updated_at": "04/10/2016 21:53"
+  },
+  {
+    "id_category": "641",
+    "id_parent": "32",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 22:43",
+    "updated_at": "18/05/2015 22:48"
+  },
+  {
+    "id_category": "534",
+    "id_parent": "360",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/11/2012 05:45",
+    "updated_at": "13/08/2019 02:42"
+  },
+  {
+    "id_category": "636",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 19:26",
+    "updated_at": "04/10/2016 21:52"
+  },
+  {
+    "id_category": "638",
+    "id_parent": "31",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 20:27",
+    "updated_at": "04/10/2016 21:54"
+  },
+  {
+    "id_category": "580",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/06/2014 18:55",
+    "updated_at": "13/08/2019 02:22"
+  },
+  {
+    "id_category": "69",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/12/2009 18:59",
+    "updated_at": "13/08/2019 02:26"
+  },
+  {
+    "id_category": "611",
+    "id_parent": "360",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/09/2014 19:56",
+    "updated_at": "13/08/2019 02:38"
+  },
+  {
+    "id_category": "578",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/06/2014 19:27",
+    "updated_at": "03/06/2014 19:27"
+  },
+  {
+    "id_category": "579",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/06/2014 19:30",
+    "updated_at": "03/06/2014 19:30"
+  },
+  {
+    "id_category": "577",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/06/2014 19:14",
+    "updated_at": "04/10/2016 21:45"
+  },
+  {
+    "id_category": "635",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 19:22",
+    "updated_at": "04/10/2016 21:52"
+  },
+  {
+    "id_category": "75",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/12/2009 20:58",
+    "updated_at": "13/08/2019 02:30"
+  },
+  {
+    "id_category": "576",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/06/2014 19:10",
+    "updated_at": "04/10/2016 21:45"
+  },
+  {
+    "id_category": "574",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/06/2014 19:02",
+    "updated_at": "03/06/2014 19:03"
+  },
+  {
+    "id_category": "573",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "02/06/2014 22:21",
+    "updated_at": "13/08/2019 21:34"
+  },
+  {
+    "id_category": "575",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/06/2014 19:06",
+    "updated_at": "03/06/2014 19:06"
+  },
+  {
+    "id_category": "86",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/12/2009 22:58",
+    "updated_at": "24/11/2019 19:28"
+  },
+  {
+    "id_category": "545",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/12/2012 04:33",
+    "updated_at": "24/11/2019 20:48"
+  },
+  {
+    "id_category": "88",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/12/2009 23:29",
+    "updated_at": "01/12/2012 02:36"
+  },
+  {
+    "id_category": "548",
+    "id_parent": "545",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "02/12/2012 04:43",
+    "updated_at": "02/12/2012 04:43"
+  },
+  {
+    "id_category": "546",
+    "id_parent": "545",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "02/12/2012 04:38",
+    "updated_at": "02/12/2012 04:38"
+  },
+  {
+    "id_category": "549",
+    "id_parent": "237",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/12/2012 20:40",
+    "updated_at": "06/08/2015 21:18"
+  },
+  {
+    "id_category": "92",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/12/2009 00:21",
+    "updated_at": "01/12/2012 04:33"
+  },
+  {
+    "id_category": "547",
+    "id_parent": "545",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "02/12/2012 04:41",
+    "updated_at": "03/12/2012 18:35"
+  },
+  {
+    "id_category": "94",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/12/2009 00:45",
+    "updated_at": "01/12/2012 04:32"
+  },
+  {
+    "id_category": "96",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "16/12/2009 02:15",
+    "updated_at": "24/11/2019 19:30"
+  },
+  {
+    "id_category": "97",
+    "id_parent": "96",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/12/2009 02:20",
+    "updated_at": "11/08/2015 21:30"
+  },
+  {
+    "id_category": "98",
+    "id_parent": "96",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/12/2009 20:45",
+    "updated_at": "11/08/2015 21:30"
+  },
+  {
+    "id_category": "557",
+    "id_parent": "178",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "20/06/2013 20:05",
+    "updated_at": "20/06/2013 20:05"
+  },
+  {
+    "id_category": "634",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 19:20",
+    "updated_at": "04/10/2016 21:52"
+  },
+  {
+    "id_category": "558",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "20/06/2013 20:42",
+    "updated_at": "13/08/2019 02:32"
+  },
+  {
+    "id_category": "102",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "22/12/2009 21:37",
+    "updated_at": "12/12/2019 19:33"
+  },
+  {
+    "id_category": "103",
+    "id_parent": "102",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "27/12/2009 22:17",
+    "updated_at": "09/07/2015 19:06"
+  },
+  {
+    "id_category": "129",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "29/12/2009 01:28",
+    "updated_at": "13/08/2019 18:50"
+  },
+  {
+    "id_category": "130",
+    "id_parent": "129",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/12/2009 01:43",
+    "updated_at": "02/06/2014 19:59"
+  },
+  {
+    "id_category": "131",
+    "id_parent": "129",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/12/2009 01:45",
+    "updated_at": "06/03/2019 00:55"
+  },
+  {
+    "id_category": "133",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "30/12/2009 17:50",
+    "updated_at": "12/12/2019 19:24"
+  },
+  {
+    "id_category": "148",
+    "id_parent": "133",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/01/2010 00:59",
+    "updated_at": "28/11/2012 20:07"
+  },
+  {
+    "id_category": "162",
+    "id_parent": "133",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/01/2010 01:49",
+    "updated_at": "17/05/2015 17:44"
+  },
+  {
+    "id_category": "178",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "07/01/2010 01:47",
+    "updated_at": "12/12/2019 19:30"
+  },
+  {
+    "id_category": "183",
+    "id_parent": "178",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "08/01/2010 00:21",
+    "updated_at": "20/06/2013 18:09"
+  },
+  {
+    "id_category": "192",
+    "id_parent": "178",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "08/01/2010 00:40",
+    "updated_at": "20/06/2013 19:02"
+  },
+  {
+    "id_category": "640",
+    "id_parent": "32",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 22:42",
+    "updated_at": "18/05/2015 22:42"
+  },
+  {
+    "id_category": "639",
+    "id_parent": "8",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 21:10",
+    "updated_at": "18/05/2015 21:10"
+  },
+  {
+    "id_category": "214",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "08/01/2010 02:16",
+    "updated_at": "13/08/2019 21:46"
+  },
+  {
+    "id_category": "210",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "08/01/2010 01:17",
+    "updated_at": "13/08/2019 22:34"
+  },
+  {
+    "id_category": "211",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "08/01/2010 01:20",
+    "updated_at": "04/06/2015 19:45"
+  },
+  {
+    "id_category": "671",
+    "id_parent": "237",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/08/2015 23:26",
+    "updated_at": "06/08/2015 23:26"
+  },
+  {
+    "id_category": "216",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "10/01/2010 18:30",
+    "updated_at": "13/08/2019 21:23"
+  },
+  {
+    "id_category": "218",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "22/03/2010 19:30",
+    "updated_at": "13/08/2019 01:22"
+  },
+  {
+    "id_category": "720",
+    "id_parent": "717",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/12/2015 01:13",
+    "updated_at": "04/10/2016 22:23"
+  },
+  {
+    "id_category": "719",
+    "id_parent": "717",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/12/2015 01:10",
+    "updated_at": "04/10/2016 22:23"
+  },
+  {
+    "id_category": "718",
+    "id_parent": "717",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "13/12/2015 21:10",
+    "updated_at": "04/10/2016 22:23"
+  },
+  {
+    "id_category": "717",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "13/12/2015 19:26",
+    "updated_at": "09/09/2019 21:12"
+  },
+  {
+    "id_category": "716",
+    "id_parent": "96",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/11/2015 21:27",
+    "updated_at": "08/02/2021 01:25"
+  },
+  {
+    "id_category": "715",
+    "id_parent": "96",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/11/2015 21:25",
+    "updated_at": "08/02/2021 01:25"
+  },
+  {
+    "id_category": "713",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/11/2015 20:09",
+    "updated_at": "06/11/2015 20:09"
+  },
+  {
+    "id_category": "712",
+    "id_parent": "711",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/11/2015 19:49",
+    "updated_at": "06/11/2015 19:49"
+  },
+  {
+    "id_category": "228",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "25/02/2011 22:36",
+    "updated_at": "12/12/2019 19:29"
+  },
+  {
+    "id_category": "229",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "25/02/2011 23:00",
+    "updated_at": "12/12/2019 20:55"
+  },
+  {
+    "id_category": "991",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "08/10/2019 21:16",
+    "updated_at": "08/10/2019 21:16"
+  },
+  {
+    "id_category": "234",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "06/03/2011 19:30",
+    "updated_at": "13/08/2019 18:49"
+  },
+  {
+    "id_category": "744",
+    "id_parent": "238",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/03/2016 20:04",
+    "updated_at": "04/10/2016 22:19"
+  },
+  {
+    "id_category": "737",
+    "id_parent": "736",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/03/2016 19:27",
+    "updated_at": "14/03/2016 19:27"
+  },
+  {
+    "id_category": "237",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/03/2011 19:47",
+    "updated_at": "06/08/2015 21:16"
+  },
+  {
+    "id_category": "238",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/03/2011 19:51",
+    "updated_at": "24/11/2019 19:52"
+  },
+  {
+    "id_category": "239",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/03/2011 19:55",
+    "updated_at": "30/11/2012 02:16"
+  },
+  {
+    "id_category": "240",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/03/2011 19:57",
+    "updated_at": "30/11/2012 02:14"
+  },
+  {
+    "id_category": "241",
+    "id_parent": "6",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/03/2011 20:07",
+    "updated_at": "04/10/2016 20:52"
+  },
+  {
+    "id_category": "535",
+    "id_parent": "133",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "28/11/2012 19:04",
+    "updated_at": "28/09/2014 20:18"
+  },
+  {
+    "id_category": "292",
+    "id_parent": "102",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/03/2011 23:52",
+    "updated_at": "09/06/2015 23:17"
+  },
+  {
+    "id_category": "684",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/08/2015 00:05",
+    "updated_at": "04/10/2016 20:57"
+  },
+  {
+    "id_category": "298",
+    "id_parent": "238",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/03/2011 23:53",
+    "updated_at": "04/10/2016 22:17"
+  },
+  {
+    "id_category": "1152",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/11/2023 01:34",
+    "updated_at": "14/11/2023 01:34"
+  },
+  {
+    "id_category": "686",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/08/2015 00:25",
+    "updated_at": "04/10/2016 20:57"
+  },
+  {
+    "id_category": "685",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/08/2015 00:06",
+    "updated_at": "04/10/2016 20:57"
+  },
+  {
+    "id_category": "678",
+    "id_parent": "96",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/08/2015 20:33",
+    "updated_at": "11/08/2015 20:33"
+  },
+  {
+    "id_category": "683",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/08/2015 00:05",
+    "updated_at": "04/10/2016 20:57"
+  },
+  {
+    "id_category": "682",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/08/2015 00:05",
+    "updated_at": "04/10/2016 20:57"
+  },
+  {
+    "id_category": "681",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "25/08/2015 23:53",
+    "updated_at": "09/10/2023 23:51"
+  },
+  {
+    "id_category": "687",
+    "id_parent": "458",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/09/2015 01:46",
+    "updated_at": "23/09/2015 01:46"
+  },
+  {
+    "id_category": "680",
+    "id_parent": "96",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/08/2015 20:36",
+    "updated_at": "08/02/2021 01:59"
+  },
+  {
+    "id_category": "679",
+    "id_parent": "96",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/08/2015 20:35",
+    "updated_at": "11/08/2015 20:35"
+  },
+  {
+    "id_category": "538",
+    "id_parent": "228",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "29/11/2012 05:28",
+    "updated_at": "18/05/2015 00:35"
+  },
+  {
+    "id_category": "536",
+    "id_parent": "228",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "29/11/2012 03:34",
+    "updated_at": "07/06/2015 23:56"
+  },
+  {
+    "id_category": "539",
+    "id_parent": "229",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "29/11/2012 19:48",
+    "updated_at": "26/07/2015 21:11"
+  },
+  {
+    "id_category": "540",
+    "id_parent": "229",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "29/11/2012 19:49",
+    "updated_at": "26/07/2015 21:17"
+  },
+  {
+    "id_category": "541",
+    "id_parent": "229",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "29/11/2012 19:50",
+    "updated_at": "26/07/2015 21:18"
+  },
+  {
+    "id_category": "566",
+    "id_parent": "563",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "21/06/2013 02:41",
+    "updated_at": "21/06/2013 02:41"
+  },
+  {
+    "id_category": "564",
+    "id_parent": "563",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "20/06/2013 23:29",
+    "updated_at": "20/06/2013 23:29"
+  },
+  {
+    "id_category": "565",
+    "id_parent": "563",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "21/06/2013 02:21",
+    "updated_at": "21/06/2013 02:21"
+  },
+  {
+    "id_category": "563",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "20/06/2013 23:24",
+    "updated_at": "12/12/2019 20:56"
+  },
+  {
+    "id_category": "562",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "20/06/2013 22:57",
+    "updated_at": "20/06/2013 22:57"
+  },
+  {
+    "id_category": "561",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "20/06/2013 22:18",
+    "updated_at": "20/06/2013 22:19"
+  },
+  {
+    "id_category": "572",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "02/06/2014 22:03",
+    "updated_at": "10/10/2023 00:07"
+  },
+  {
+    "id_category": "743",
+    "id_parent": "238",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/03/2016 20:03",
+    "updated_at": "04/10/2016 22:18"
+  },
+  {
+    "id_category": "742",
+    "id_parent": "238",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/03/2016 20:02",
+    "updated_at": "04/10/2016 22:17"
+  },
+  {
+    "id_category": "741",
+    "id_parent": "238",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/03/2016 20:00",
+    "updated_at": "04/10/2016 22:17"
+  },
+  {
+    "id_category": "740",
+    "id_parent": "736",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/03/2016 19:56",
+    "updated_at": "14/03/2016 19:56"
+  },
+  {
+    "id_category": "1157",
+    "id_parent": "1155",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/04/2024 19:51",
+    "updated_at": "18/04/2024 19:51"
+  },
+  {
+    "id_category": "738",
+    "id_parent": "736",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/03/2016 19:28",
+    "updated_at": "14/03/2016 19:28"
+  },
+  {
+    "id_category": "736",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/03/2016 19:26",
+    "updated_at": "24/11/2019 19:49"
+  },
+  {
+    "id_category": "360",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "05/04/2011 00:16",
+    "updated_at": "13/08/2019 19:49"
+  },
+  {
+    "id_category": "361",
+    "id_parent": "360",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/04/2011 00:24",
+    "updated_at": "13/08/2019 02:44"
+  },
+  {
+    "id_category": "362",
+    "id_parent": "360",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/04/2011 00:26",
+    "updated_at": "13/08/2019 02:41"
+  },
+  {
+    "id_category": "363",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/04/2011 01:19",
+    "updated_at": "23/04/2019 19:49"
+  },
+  {
+    "id_category": "556",
+    "id_parent": "378",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/12/2012 23:54",
+    "updated_at": "03/12/2012 23:54"
+  },
+  {
+    "id_category": "555",
+    "id_parent": "378",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/12/2012 23:53",
+    "updated_at": "03/12/2012 23:53"
+  },
+  {
+    "id_category": "554",
+    "id_parent": "378",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/12/2012 23:51",
+    "updated_at": "03/12/2012 23:51"
+  },
+  {
+    "id_category": "553",
+    "id_parent": "363",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/12/2012 22:53",
+    "updated_at": "23/04/2019 19:48"
+  },
+  {
+    "id_category": "552",
+    "id_parent": "363",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/12/2012 22:32",
+    "updated_at": "23/04/2019 20:37"
+  },
+  {
+    "id_category": "551",
+    "id_parent": "363",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/12/2012 22:16",
+    "updated_at": "03/12/2012 22:16"
+  },
+  {
+    "id_category": "372",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "08/05/2011 22:26",
+    "updated_at": "09/10/2023 23:57"
+  },
+  {
+    "id_category": "544",
+    "id_parent": "372",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "30/11/2012 01:20",
+    "updated_at": "04/10/2016 21:41"
+  },
+  {
+    "id_category": "377",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "08/05/2011 23:20",
+    "updated_at": "09/10/2023 23:59"
+  },
+  {
+    "id_category": "378",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/05/2011 01:44",
+    "updated_at": "24/11/2019 19:54"
+  },
+  {
+    "id_category": "550",
+    "id_parent": "237",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/12/2012 21:04",
+    "updated_at": "06/08/2015 21:18"
+  },
+  {
+    "id_category": "543",
+    "id_parent": "372",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "30/11/2012 01:16",
+    "updated_at": "04/10/2016 21:41"
+  },
+  {
+    "id_category": "397",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2011 00:18",
+    "updated_at": "04/10/2016 21:44"
+  },
+  {
+    "id_category": "398",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2011 00:20",
+    "updated_at": "04/10/2016 21:44"
+  },
+  {
+    "id_category": "502",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "12/10/2012 21:14",
+    "updated_at": "13/08/2019 01:14"
+  },
+  {
+    "id_category": "401",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2011 00:23",
+    "updated_at": "04/10/2016 21:44"
+  },
+  {
+    "id_category": "402",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2011 00:24",
+    "updated_at": "04/10/2016 21:44"
+  },
+  {
+    "id_category": "403",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2011 00:25",
+    "updated_at": "04/10/2016 21:44"
+  },
+  {
+    "id_category": "605",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/08/2014 20:02",
+    "updated_at": "20/05/2015 19:12"
+  },
+  {
+    "id_category": "604",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/08/2014 19:39",
+    "updated_at": "20/05/2015 19:12"
+  },
+  {
+    "id_category": "603",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/08/2014 19:31",
+    "updated_at": "20/05/2015 19:12"
+  },
+  {
+    "id_category": "665",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/07/2015 22:26",
+    "updated_at": "04/10/2016 21:47"
+  },
+  {
+    "id_category": "664",
+    "id_parent": "229",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "26/07/2015 21:22",
+    "updated_at": "26/07/2015 21:58"
+  },
+  {
+    "id_category": "663",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/07/2015 22:29",
+    "updated_at": "04/10/2016 21:47"
+  },
+  {
+    "id_category": "662",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/07/2015 22:28",
+    "updated_at": "04/10/2016 21:47"
+  },
+  {
+    "id_category": "661",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/07/2015 22:25",
+    "updated_at": "04/10/2016 21:47"
+  },
+  {
+    "id_category": "647",
+    "id_parent": "33",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2015 22:13",
+    "updated_at": "04/10/2016 22:02"
+  },
+  {
+    "id_category": "428",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2011 00:37",
+    "updated_at": "04/10/2016 21:58"
+  },
+  {
+    "id_category": "568",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "21/06/2013 05:03",
+    "updated_at": "04/10/2016 21:58"
+  },
+  {
+    "id_category": "567",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "21/06/2013 04:21",
+    "updated_at": "04/10/2016 21:58"
+  },
+  {
+    "id_category": "439",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2011 00:47",
+    "updated_at": "04/10/2016 21:58"
+  },
+  {
+    "id_category": "440",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2011 00:58",
+    "updated_at": "04/10/2016 21:58"
+  },
+  {
+    "id_category": "690",
+    "id_parent": "687",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "25/09/2015 00:21",
+    "updated_at": "25/09/2015 00:21"
+  },
+  {
+    "id_category": "689",
+    "id_parent": "687",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "25/09/2015 00:20",
+    "updated_at": "25/09/2015 00:20"
+  },
+  {
+    "id_category": "672",
+    "id_parent": "237",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/08/2015 23:50",
+    "updated_at": "06/08/2015 23:50"
+  },
+  {
+    "id_category": "677",
+    "id_parent": "378",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/08/2015 18:40",
+    "updated_at": "10/08/2015 18:40"
+  },
+  {
+    "id_category": "688",
+    "id_parent": "687",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "24/09/2015 21:00",
+    "updated_at": "24/09/2015 21:00"
+  },
+  {
+    "id_category": "675",
+    "id_parent": "378",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/08/2015 18:36",
+    "updated_at": "10/08/2015 18:36"
+  },
+  {
+    "id_category": "1154",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "31/03/2024 23:33",
+    "updated_at": "31/03/2024 23:35"
+  },
+  {
+    "id_category": "674",
+    "id_parent": "378",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/08/2015 01:03",
+    "updated_at": "10/08/2015 01:16"
+  },
+  {
+    "id_category": "673",
+    "id_parent": "237",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "07/08/2015 00:06",
+    "updated_at": "07/08/2015 00:07"
+  },
+  {
+    "id_category": "450",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "24/05/2011 07:42",
+    "updated_at": "13/08/2019 22:53"
+  },
+  {
+    "id_category": "455",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "24/05/2011 08:05",
+    "updated_at": "13/08/2019 20:20"
+  },
+  {
+    "id_category": "456",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "24/05/2011 19:43",
+    "updated_at": "04/10/2016 21:50"
+  },
+  {
+    "id_category": "457",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "26/05/2011 18:40",
+    "updated_at": "10/10/2023 00:48"
+  },
+  {
+    "id_category": "458",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "08/07/2011 19:31",
+    "updated_at": "10/10/2023 00:50"
+  },
+  {
+    "id_category": "459",
+    "id_parent": "458",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "08/07/2011 19:33",
+    "updated_at": "22/09/2015 20:02"
+  },
+  {
+    "id_category": "460",
+    "id_parent": "458",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "08/07/2011 19:37",
+    "updated_at": "22/09/2015 19:42"
+  },
+  {
+    "id_category": "660",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "10/07/2015 22:17",
+    "updated_at": "10/10/2023 00:09"
+  },
+  {
+    "id_category": "659",
+    "id_parent": "211",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/06/2015 18:51",
+    "updated_at": "04/10/2016 20:50"
+  },
+  {
+    "id_category": "658",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/06/2015 18:35",
+    "updated_at": "13/08/2019 02:27"
+  },
+  {
+    "id_category": "657",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/06/2015 19:58",
+    "updated_at": "04/06/2015 19:58"
+  },
+  {
+    "id_category": "656",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/06/2015 19:55",
+    "updated_at": "04/06/2015 19:55"
+  },
+  {
+    "id_category": "650",
+    "id_parent": "460",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/05/2015 23:19",
+    "updated_at": "22/09/2015 19:39"
+  },
+  {
+    "id_category": "649",
+    "id_parent": "460",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/05/2015 23:19",
+    "updated_at": "22/09/2015 19:39"
+  },
+  {
+    "id_category": "648",
+    "id_parent": "460",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/05/2015 23:18",
+    "updated_at": "22/09/2015 19:40"
+  },
+  {
+    "id_category": "651",
+    "id_parent": "211",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/06/2015 19:17",
+    "updated_at": "04/10/2016 20:50"
+  },
+  {
+    "id_category": "655",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/06/2015 19:51",
+    "updated_at": "04/06/2015 19:59"
+  },
+  {
+    "id_category": "653",
+    "id_parent": "211",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/06/2015 19:26",
+    "updated_at": "04/10/2016 20:50"
+  },
+  {
+    "id_category": "472",
+    "id_parent": "459",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/07/2011 19:20",
+    "updated_at": "22/09/2015 20:00"
+  },
+  {
+    "id_category": "652",
+    "id_parent": "211",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/06/2015 19:23",
+    "updated_at": "04/10/2016 20:50"
+  },
+  {
+    "id_category": "654",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/06/2015 19:48",
+    "updated_at": "04/06/2015 19:48"
+  },
+  {
+    "id_category": "475",
+    "id_parent": "459",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/07/2011 01:06",
+    "updated_at": "22/09/2015 20:00"
+  },
+  {
+    "id_category": "476",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "25/07/2011 18:16",
+    "updated_at": "09/09/2019 21:14"
+  },
+  {
+    "id_category": "610",
+    "id_parent": "6",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/09/2014 17:55",
+    "updated_at": "04/10/2016 20:51"
+  },
+  {
+    "id_category": "606",
+    "id_parent": "476",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "24/08/2014 18:56",
+    "updated_at": "24/08/2014 19:48"
+  },
+  {
+    "id_category": "609",
+    "id_parent": "476",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "24/08/2014 21:03",
+    "updated_at": "24/08/2014 21:03"
+  },
+  {
+    "id_category": "633",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/05/2015 19:19",
+    "updated_at": "04/10/2016 21:52"
+  },
+  {
+    "id_category": "607",
+    "id_parent": "476",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "24/08/2014 18:58",
+    "updated_at": "24/08/2014 19:49"
+  },
+  {
+    "id_category": "613",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/11/2014 21:37",
+    "updated_at": "24/11/2019 21:47"
+  },
+  {
+    "id_category": "612",
+    "id_parent": "102",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "28/09/2014 20:39",
+    "updated_at": "09/07/2015 19:03"
+  },
+  {
+    "id_category": "493",
+    "id_parent": "457",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/10/2011 01:24",
+    "updated_at": "27/01/2019 23:09"
+  },
+  {
+    "id_category": "494",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "01/03/2012 21:18",
+    "updated_at": "10/10/2023 00:46"
+  },
+  {
+    "id_category": "495",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/06/2012 00:24",
+    "updated_at": "12/07/2021 19:59"
+  },
+  {
+    "id_category": "496",
+    "id_parent": "457",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/06/2012 02:13",
+    "updated_at": "04/10/2016 21:59"
+  },
+  {
+    "id_category": "497",
+    "id_parent": "457",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/06/2012 02:16",
+    "updated_at": "27/01/2019 23:05"
+  },
+  {
+    "id_category": "708",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "05/11/2015 23:28",
+    "updated_at": "26/02/2024 18:17"
+  },
+  {
+    "id_category": "709",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/11/2015 23:34",
+    "updated_at": "28/11/2016 23:41"
+  },
+  {
+    "id_category": "500",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/09/2012 19:21",
+    "updated_at": "01/12/2012 03:01"
+  },
+  {
+    "id_category": "711",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/11/2015 19:27",
+    "updated_at": "13/08/2019 02:31"
+  },
+  {
+    "id_category": "710",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/11/2015 01:16",
+    "updated_at": "13/08/2019 02:14"
+  },
+  {
+    "id_category": "668",
+    "id_parent": "667",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/08/2015 19:03",
+    "updated_at": "03/08/2015 19:07"
+  },
+  {
+    "id_category": "667",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/08/2015 19:01",
+    "updated_at": "04/10/2016 21:51"
+  },
+  {
+    "id_category": "670",
+    "id_parent": "237",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/08/2015 22:59",
+    "updated_at": "06/08/2015 22:59"
+  },
+  {
+    "id_category": "666",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/07/2015 22:28",
+    "updated_at": "04/10/2016 21:47"
+  },
+  {
+    "id_category": "669",
+    "id_parent": "667",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/08/2015 19:06",
+    "updated_at": "03/08/2015 19:07"
+  },
+  {
+    "id_category": "646",
+    "id_parent": "214",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2015 00:16",
+    "updated_at": "11/08/2015 21:54"
+  },
+  {
+    "id_category": "645",
+    "id_parent": "214",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2015 00:14",
+    "updated_at": "11/08/2015 21:54"
+  },
+  {
+    "id_category": "644",
+    "id_parent": "214",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2015 00:13",
+    "updated_at": "19/05/2015 00:13"
+  },
+  {
+    "id_category": "700",
+    "id_parent": "31",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/11/2015 18:40",
+    "updated_at": "04/10/2016 21:54"
+  },
+  {
+    "id_category": "701",
+    "id_parent": "8",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/11/2015 19:41",
+    "updated_at": "04/11/2015 19:41"
+  },
+  {
+    "id_category": "691",
+    "id_parent": "687",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "25/09/2015 00:32",
+    "updated_at": "25/09/2015 00:32"
+  },
+  {
+    "id_category": "694",
+    "id_parent": "687",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "29/09/2015 19:47",
+    "updated_at": "29/09/2015 19:47"
+  },
+  {
+    "id_category": "695",
+    "id_parent": "494",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "25/10/2015 18:53",
+    "updated_at": "25/10/2015 18:53"
+  },
+  {
+    "id_category": "585",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "08/06/2014 17:44",
+    "updated_at": "18/06/2020 02:08"
+  },
+  {
+    "id_category": "569",
+    "id_parent": "494",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/05/2014 19:19",
+    "updated_at": "22/09/2015 19:43"
+  },
+  {
+    "id_category": "570",
+    "id_parent": "494",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/05/2014 19:23",
+    "updated_at": "22/09/2015 20:38"
+  },
+  {
+    "id_category": "699",
+    "id_parent": "667",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "04/11/2015 00:53",
+    "updated_at": "04/11/2015 00:53"
+  },
+  {
+    "id_category": "698",
+    "id_parent": "457",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/11/2015 00:45",
+    "updated_at": "04/10/2016 21:59"
+  },
+  {
+    "id_category": "696",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/11/2015 22:30",
+    "updated_at": "04/10/2016 21:47"
+  },
+  {
+    "id_category": "693",
+    "id_parent": "687",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "29/09/2015 19:37",
+    "updated_at": "29/09/2015 19:37"
+  },
+  {
+    "id_category": "692",
+    "id_parent": "687",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "29/09/2015 19:35",
+    "updated_at": "29/09/2015 19:35"
+  },
+  {
+    "id_category": "703",
+    "id_parent": "33",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/11/2015 20:11",
+    "updated_at": "04/10/2016 22:02"
+  },
+  {
+    "id_category": "702",
+    "id_parent": "32",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/11/2015 19:49",
+    "updated_at": "04/11/2015 19:49"
+  },
+  {
+    "id_category": "697",
+    "id_parent": "667",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "04/11/2015 00:39",
+    "updated_at": "04/11/2015 00:39"
+  },
+  {
+    "id_category": "707",
+    "id_parent": "33",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/11/2015 21:12",
+    "updated_at": "05/11/2015 21:12"
+  },
+  {
+    "id_category": "706",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/11/2015 21:00",
+    "updated_at": "04/10/2016 21:58"
+  },
+  {
+    "id_category": "705",
+    "id_parent": "460",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/11/2015 19:04",
+    "updated_at": "05/11/2015 19:04"
+  },
+  {
+    "id_category": "704",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/11/2015 23:01",
+    "updated_at": "04/10/2016 21:52"
+  },
+  {
+    "id_category": "727",
+    "id_parent": "724",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:13",
+    "updated_at": "11/03/2016 20:13"
+  },
+  {
+    "id_category": "726",
+    "id_parent": "724",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:12",
+    "updated_at": "11/03/2016 20:12"
+  },
+  {
+    "id_category": "725",
+    "id_parent": "724",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:10",
+    "updated_at": "11/03/2016 20:10"
+  },
+  {
+    "id_category": "724",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/03/2016 20:07",
+    "updated_at": "04/10/2016 21:46"
+  },
+  {
+    "id_category": "728",
+    "id_parent": "724",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:13",
+    "updated_at": "11/03/2016 20:13"
+  },
+  {
+    "id_category": "729",
+    "id_parent": "724",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:14",
+    "updated_at": "11/03/2016 20:14"
+  },
+  {
+    "id_category": "730",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/03/2016 20:23",
+    "updated_at": "13/08/2019 02:25"
+  },
+  {
+    "id_category": "731",
+    "id_parent": "730",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:23",
+    "updated_at": "24/01/2019 00:09"
+  },
+  {
+    "id_category": "732",
+    "id_parent": "730",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:24",
+    "updated_at": "14/08/2019 01:09"
+  },
+  {
+    "id_category": "733",
+    "id_parent": "730",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:24",
+    "updated_at": "14/08/2019 01:10"
+  },
+  {
+    "id_category": "734",
+    "id_parent": "730",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:25",
+    "updated_at": "14/08/2019 01:10"
+  },
+  {
+    "id_category": "735",
+    "id_parent": "730",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2016 20:26",
+    "updated_at": "14/08/2019 01:10"
+  },
+  {
+    "id_category": "745",
+    "id_parent": "238",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/03/2016 20:05",
+    "updated_at": "04/10/2016 22:17"
+  },
+  {
+    "id_category": "746",
+    "id_parent": "238",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/03/2016 20:06",
+    "updated_at": "04/10/2016 22:17"
+  },
+  {
+    "id_category": "933",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/03/2019 20:12",
+    "updated_at": "11/03/2019 20:12"
+  },
+  {
+    "id_category": "748",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "17/03/2016 19:52",
+    "updated_at": "09/10/2023 23:58"
+  },
+  {
+    "id_category": "749",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/03/2016 19:54",
+    "updated_at": "04/10/2016 21:42"
+  },
+  {
+    "id_category": "750",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/03/2016 19:58",
+    "updated_at": "04/10/2016 21:42"
+  },
+  {
+    "id_category": "751",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/03/2016 20:01",
+    "updated_at": "04/10/2016 21:42"
+  },
+  {
+    "id_category": "752",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/03/2016 20:07",
+    "updated_at": "04/10/2016 21:42"
+  },
+  {
+    "id_category": "753",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/03/2016 20:08",
+    "updated_at": "04/10/2016 21:42"
+  },
+  {
+    "id_category": "754",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/03/2016 20:18",
+    "updated_at": "04/10/2016 21:43"
+  },
+  {
+    "id_category": "755",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/03/2016 20:19",
+    "updated_at": "04/10/2016 21:43"
+  },
+  {
+    "id_category": "756",
+    "id_parent": "372",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/03/2016 01:43",
+    "updated_at": "07/11/2019 01:32"
+  },
+  {
+    "id_category": "1065",
+    "id_parent": "1057",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/02/2021 22:57",
+    "updated_at": "17/02/2021 20:53"
+  },
+  {
+    "id_category": "1066",
+    "id_parent": "1057",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/02/2021 23:23",
+    "updated_at": "17/02/2021 20:55"
+  },
+  {
+    "id_category": "1056",
+    "id_parent": "133",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "15/02/2021 21:36",
+    "updated_at": "16/02/2021 20:19"
+  },
+  {
+    "id_category": "760",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/09/2016 23:09",
+    "updated_at": "04/10/2016 21:49"
+  },
+  {
+    "id_category": "761",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/09/2016 23:13",
+    "updated_at": "13/08/2019 02:26"
+  },
+  {
+    "id_category": "762",
+    "id_parent": "711",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 18:35",
+    "updated_at": "04/10/2016 22:20"
+  },
+  {
+    "id_category": "763",
+    "id_parent": "711",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 18:35",
+    "updated_at": "04/10/2016 22:15"
+  },
+  {
+    "id_category": "764",
+    "id_parent": "711",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 18:35",
+    "updated_at": "04/10/2016 22:44"
+  },
+  {
+    "id_category": "767",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/09/2016 20:27",
+    "updated_at": "28/11/2016 23:41"
+  },
+  {
+    "id_category": "768",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "19/09/2016 20:33",
+    "updated_at": "03/11/2023 23:56"
+  },
+  {
+    "id_category": "781",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "04/10/2016 22:41",
+    "updated_at": "04/10/2016 22:41"
+  },
+  {
+    "id_category": "770",
+    "id_parent": "768",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/09/2016 20:36",
+    "updated_at": "04/10/2016 20:58"
+  },
+  {
+    "id_category": "771",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/09/2016 21:59",
+    "updated_at": "04/10/2016 20:57"
+  },
+  {
+    "id_category": "772",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/09/2016 22:49",
+    "updated_at": "12/12/2019 19:30"
+  },
+  {
+    "id_category": "773",
+    "id_parent": "772",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 22:51",
+    "updated_at": "04/10/2016 22:22"
+  },
+  {
+    "id_category": "774",
+    "id_parent": "772",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 22:52",
+    "updated_at": "04/10/2016 22:22"
+  },
+  {
+    "id_category": "775",
+    "id_parent": "772",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 22:53",
+    "updated_at": "04/10/2016 22:23"
+  },
+  {
+    "id_category": "776",
+    "id_parent": "772",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 22:53",
+    "updated_at": "04/10/2016 22:23"
+  },
+  {
+    "id_category": "777",
+    "id_parent": "772",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 22:54",
+    "updated_at": "04/10/2016 22:23"
+  },
+  {
+    "id_category": "778",
+    "id_parent": "772",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/09/2016 22:55",
+    "updated_at": "04/10/2016 22:23"
+  },
+  {
+    "id_category": "779",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "25/09/2016 20:30",
+    "updated_at": "04/10/2016 21:44"
+  },
+  {
+    "id_category": "780",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "25/09/2016 20:41",
+    "updated_at": "04/10/2016 21:49"
+  },
+  {
+    "id_category": "782",
+    "id_parent": "765",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "04/10/2016 22:47",
+    "updated_at": "04/10/2016 22:47"
+  },
+  {
+    "id_category": "783",
+    "id_parent": "765",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/10/2016 01:25",
+    "updated_at": "05/10/2016 01:25"
+  },
+  {
+    "id_category": "784",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/10/2016 23:50",
+    "updated_at": "06/10/2016 23:50"
+  },
+  {
+    "id_category": "785",
+    "id_parent": "784",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/10/2016 23:52",
+    "updated_at": "06/10/2016 23:52"
+  },
+  {
+    "id_category": "786",
+    "id_parent": "784",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/10/2016 23:52",
+    "updated_at": "06/10/2016 23:53"
+  },
+  {
+    "id_category": "787",
+    "id_parent": "784",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/10/2016 23:54",
+    "updated_at": "06/10/2016 23:54"
+  },
+  {
+    "id_category": "788",
+    "id_parent": "784",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/10/2016 23:54",
+    "updated_at": "06/10/2016 23:54"
+  },
+  {
+    "id_category": "789",
+    "id_parent": "784",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/10/2016 23:55",
+    "updated_at": "06/10/2016 23:55"
+  },
+  {
+    "id_category": "790",
+    "id_parent": "784",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/10/2016 23:55",
+    "updated_at": "06/10/2016 23:55"
+  },
+  {
+    "id_category": "791",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/11/2016 18:29",
+    "updated_at": "13/08/2019 02:12"
+  },
+  {
+    "id_category": "792",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/11/2016 18:42",
+    "updated_at": "29/11/2016 18:42"
+  },
+  {
+    "id_category": "793",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/11/2016 18:42",
+    "updated_at": "13/08/2019 02:30"
+  },
+  {
+    "id_category": "794",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/11/2016 19:28",
+    "updated_at": "29/11/2016 19:29"
+  },
+  {
+    "id_category": "795",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/11/2016 19:37",
+    "updated_at": "29/11/2016 19:37"
+  },
+  {
+    "id_category": "796",
+    "id_parent": "32",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/11/2016 19:51",
+    "updated_at": "29/11/2016 19:52"
+  },
+  {
+    "id_category": "797",
+    "id_parent": "8",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/11/2016 19:56",
+    "updated_at": "29/11/2016 19:57"
+  },
+  {
+    "id_category": "798",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/11/2016 20:30",
+    "updated_at": "29/11/2016 20:30"
+  },
+  {
+    "id_category": "799",
+    "id_parent": "214",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "30/11/2016 00:17",
+    "updated_at": "30/11/2016 00:17"
+  },
+  {
+    "id_category": "800",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/04/2017 19:29",
+    "updated_at": "13/08/2019 02:24"
+  },
+  {
+    "id_category": "801",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/04/2017 19:42",
+    "updated_at": "11/04/2017 19:42"
+  },
+  {
+    "id_category": "802",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "11/04/2017 20:05",
+    "updated_at": "13/08/2019 22:37"
+  },
+  {
+    "id_category": "803",
+    "id_parent": "802",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/04/2017 20:07",
+    "updated_at": "11/04/2017 20:07"
+  },
+  {
+    "id_category": "804",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "24/04/2017 18:42",
+    "updated_at": "24/04/2017 18:42"
+  },
+  {
+    "id_category": "805",
+    "id_parent": "711",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "26/04/2017 19:58",
+    "updated_at": "26/04/2017 19:58"
+  },
+  {
+    "id_category": "806",
+    "id_parent": "765",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "26/04/2017 19:58",
+    "updated_at": "26/04/2017 19:58"
+  },
+  {
+    "id_category": "807",
+    "id_parent": "765",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/06/2017 19:01",
+    "updated_at": "06/06/2017 19:01"
+  },
+  {
+    "id_category": "808",
+    "id_parent": "711",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/06/2017 20:31",
+    "updated_at": "06/06/2017 20:31"
+  },
+  {
+    "id_category": "809",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "21/08/2017 01:03",
+    "updated_at": "13/08/2019 01:20"
+  },
+  {
+    "id_category": "810",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/10/2017 18:51",
+    "updated_at": "17/10/2017 18:51"
+  },
+  {
+    "id_category": "811",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/01/2018 20:37",
+    "updated_at": "11/01/2018 23:17"
+  },
+  {
+    "id_category": "813",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/01/2018 23:45",
+    "updated_at": "13/08/2019 02:32"
+  },
+  {
+    "id_category": "814",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/01/2018 23:41",
+    "updated_at": "12/12/2019 19:31"
+  },
+  {
+    "id_category": "894",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/12/2018 01:31",
+    "updated_at": "09/09/2019 21:36"
+  },
+  {
+    "id_category": "816",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2018 23:22",
+    "updated_at": "12/12/2019 20:56"
+  },
+  {
+    "id_category": "817",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/02/2018 23:24",
+    "updated_at": "18/02/2018 23:24"
+  },
+  {
+    "id_category": "818",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/02/2018 23:24",
+    "updated_at": "18/02/2018 23:24"
+  },
+  {
+    "id_category": "819",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/02/2018 23:24",
+    "updated_at": "18/02/2018 23:24"
+  },
+  {
+    "id_category": "820",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/02/2018 23:24",
+    "updated_at": "19/02/2018 01:00"
+  },
+  {
+    "id_category": "821",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/02/2018 23:30",
+    "updated_at": "18/02/2018 23:30"
+  },
+  {
+    "id_category": "822",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/02/2018 23:30",
+    "updated_at": "18/02/2018 23:30"
+  },
+  {
+    "id_category": "823",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/02/2018 23:31",
+    "updated_at": "18/02/2018 23:31"
+  },
+  {
+    "id_category": "824",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/03/2018 19:48",
+    "updated_at": "12/12/2019 20:54"
+  },
+  {
+    "id_category": "825",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 19:51",
+    "updated_at": "23/03/2018 20:41"
+  },
+  {
+    "id_category": "826",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:14",
+    "updated_at": "23/03/2018 20:41"
+  },
+  {
+    "id_category": "827",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:20",
+    "updated_at": "23/03/2018 21:05"
+  },
+  {
+    "id_category": "828",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:21",
+    "updated_at": "23/03/2018 20:21"
+  },
+  {
+    "id_category": "829",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:22",
+    "updated_at": "23/03/2018 20:22"
+  },
+  {
+    "id_category": "830",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:22",
+    "updated_at": "23/03/2018 20:22"
+  },
+  {
+    "id_category": "831",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:23",
+    "updated_at": "23/03/2018 20:23"
+  },
+  {
+    "id_category": "832",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:24",
+    "updated_at": "23/03/2018 20:24"
+  },
+  {
+    "id_category": "833",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:25",
+    "updated_at": "23/03/2018 20:25"
+  },
+  {
+    "id_category": "834",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:26",
+    "updated_at": "23/03/2018 20:26"
+  },
+  {
+    "id_category": "835",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:26",
+    "updated_at": "23/03/2018 20:26"
+  },
+  {
+    "id_category": "836",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:27",
+    "updated_at": "23/03/2018 20:27"
+  },
+  {
+    "id_category": "837",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:28",
+    "updated_at": "23/03/2018 20:28"
+  },
+  {
+    "id_category": "838",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:28",
+    "updated_at": "23/03/2018 20:28"
+  },
+  {
+    "id_category": "839",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:29",
+    "updated_at": "23/03/2018 20:29"
+  },
+  {
+    "id_category": "840",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:30",
+    "updated_at": "23/03/2018 20:30"
+  },
+  {
+    "id_category": "841",
+    "id_parent": "824",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:31",
+    "updated_at": "23/03/2018 20:31"
+  },
+  {
+    "id_category": "842",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/03/2018 20:32",
+    "updated_at": "23/03/2018 20:34"
+  },
+  {
+    "id_category": "843",
+    "id_parent": "842",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:35",
+    "updated_at": "23/03/2018 20:37"
+  },
+  {
+    "id_category": "844",
+    "id_parent": "842",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:36",
+    "updated_at": "23/03/2018 20:36"
+  },
+  {
+    "id_category": "845",
+    "id_parent": "842",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:36",
+    "updated_at": "23/03/2018 20:37"
+  },
+  {
+    "id_category": "846",
+    "id_parent": "842",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/03/2018 20:38",
+    "updated_at": "23/03/2018 20:38"
+  },
+  {
+    "id_category": "847",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/03/2018 20:39",
+    "updated_at": "23/03/2018 20:39"
+  },
+  {
+    "id_category": "848",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/07/2018 20:07",
+    "updated_at": "12/12/2019 19:26"
+  },
+  {
+    "id_category": "849",
+    "id_parent": "848",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/07/2018 20:09",
+    "updated_at": "18/07/2018 20:09"
+  },
+  {
+    "id_category": "850",
+    "id_parent": "848",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/07/2018 20:12",
+    "updated_at": "18/07/2018 20:12"
+  },
+  {
+    "id_category": "851",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/07/2018 00:26",
+    "updated_at": "19/07/2018 00:26"
+  },
+  {
+    "id_category": "852",
+    "id_parent": "851",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/07/2018 00:28",
+    "updated_at": "19/07/2018 00:28"
+  },
+  {
+    "id_category": "853",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/07/2018 00:39",
+    "updated_at": "19/07/2018 00:39"
+  },
+  {
+    "id_category": "855",
+    "id_parent": "853",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/07/2018 00:41",
+    "updated_at": "19/07/2018 00:41"
+  },
+  {
+    "id_category": "895",
+    "id_parent": "892",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/12/2018 21:42",
+    "updated_at": "17/12/2018 21:42"
+  },
+  {
+    "id_category": "858",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "22/07/2018 20:19",
+    "updated_at": "15/11/2018 19:45"
+  },
+  {
+    "id_category": "859",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "16/10/2018 00:20",
+    "updated_at": "27/01/2019 23:18"
+  },
+  {
+    "id_category": "860",
+    "id_parent": "859",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/10/2018 00:27",
+    "updated_at": "27/01/2019 23:21"
+  },
+  {
+    "id_category": "861",
+    "id_parent": "859",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/10/2018 01:17",
+    "updated_at": "16/10/2018 01:33"
+  },
+  {
+    "id_category": "862",
+    "id_parent": "859",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/10/2018 01:19",
+    "updated_at": "16/10/2018 01:33"
+  },
+  {
+    "id_category": "869",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:27",
+    "updated_at": "17/10/2018 19:30"
+  },
+  {
+    "id_category": "868",
+    "id_parent": "458",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/10/2018 19:25",
+    "updated_at": "18/10/2018 00:26"
+  },
+  {
+    "id_category": "867",
+    "id_parent": "859",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/10/2018 01:29",
+    "updated_at": "16/10/2018 01:29"
+  },
+  {
+    "id_category": "866",
+    "id_parent": "859",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "16/10/2018 01:23",
+    "updated_at": "16/10/2018 01:30"
+  },
+  {
+    "id_category": "871",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:34",
+    "updated_at": "17/10/2018 19:34"
+  },
+  {
+    "id_category": "872",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:38",
+    "updated_at": "17/10/2018 19:38"
+  },
+  {
+    "id_category": "873",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:40",
+    "updated_at": "17/10/2018 19:40"
+  },
+  {
+    "id_category": "874",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:41",
+    "updated_at": "17/10/2018 19:41"
+  },
+  {
+    "id_category": "875",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:43",
+    "updated_at": "17/10/2018 19:43"
+  },
+  {
+    "id_category": "876",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:44",
+    "updated_at": "17/10/2018 19:44"
+  },
+  {
+    "id_category": "877",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:45",
+    "updated_at": "17/10/2018 19:45"
+  },
+  {
+    "id_category": "878",
+    "id_parent": "868",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/10/2018 19:47",
+    "updated_at": "17/10/2018 19:47"
+  },
+  {
+    "id_category": "879",
+    "id_parent": "458",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/10/2018 20:22",
+    "updated_at": "18/10/2018 20:22"
+  },
+  {
+    "id_category": "880",
+    "id_parent": "879",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/10/2018 20:25",
+    "updated_at": "18/10/2018 21:10"
+  },
+  {
+    "id_category": "881",
+    "id_parent": "879",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/10/2018 20:26",
+    "updated_at": "18/10/2018 21:05"
+  },
+  {
+    "id_category": "882",
+    "id_parent": "879",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/10/2018 20:27",
+    "updated_at": "18/10/2018 21:10"
+  },
+  {
+    "id_category": "883",
+    "id_parent": "129",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/10/2018 00:19",
+    "updated_at": "23/10/2018 00:19"
+  },
+  {
+    "id_category": "884",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "23/10/2018 20:58",
+    "updated_at": "10/10/2023 00:07"
+  },
+  {
+    "id_category": "885",
+    "id_parent": "884",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/10/2018 21:01",
+    "updated_at": "23/10/2018 21:03"
+  },
+  {
+    "id_category": "886",
+    "id_parent": "884",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/10/2018 21:02",
+    "updated_at": "23/10/2018 21:03"
+  },
+  {
+    "id_category": "887",
+    "id_parent": "884",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/10/2018 21:04",
+    "updated_at": "23/10/2018 21:04"
+  },
+  {
+    "id_category": "888",
+    "id_parent": "884",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/10/2018 21:05",
+    "updated_at": "23/10/2018 21:05"
+  },
+  {
+    "id_category": "889",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/10/2018 00:58",
+    "updated_at": "26/10/2018 00:58"
+  },
+  {
+    "id_category": "890",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "11/11/2018 23:34",
+    "updated_at": "13/08/2019 19:46"
+  },
+  {
+    "id_category": "891",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "11/11/2018 23:35",
+    "updated_at": "11/11/2018 23:36"
+  },
+  {
+    "id_category": "892",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "11/11/2018 23:37",
+    "updated_at": "10/10/2023 00:09"
+  },
+  {
+    "id_category": "893",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "11/11/2018 23:38",
+    "updated_at": "11/11/2018 23:38"
+  },
+  {
+    "id_category": "896",
+    "id_parent": "360",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/12/2018 00:30",
+    "updated_at": "13/08/2019 02:42"
+  },
+  {
+    "id_category": "897",
+    "id_parent": "6",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/01/2019 20:35",
+    "updated_at": "06/01/2019 20:35"
+  },
+  {
+    "id_category": "898",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/01/2019 00:24",
+    "updated_at": "09/01/2019 00:24"
+  },
+  {
+    "id_category": "899",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "20/01/2019 19:39",
+    "updated_at": "13/08/2019 01:25"
+  },
+  {
+    "id_category": "900",
+    "id_parent": "360",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "20/01/2019 20:47",
+    "updated_at": "13/08/2019 02:43"
+  },
+  {
+    "id_category": "901",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "20/01/2019 21:02",
+    "updated_at": "20/01/2019 21:02"
+  },
+  {
+    "id_category": "902",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "20/01/2019 22:11",
+    "updated_at": "20/01/2019 22:11"
+  },
+  {
+    "id_category": "903",
+    "id_parent": "545",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "22/01/2019 02:11",
+    "updated_at": "22/01/2019 02:11"
+  },
+  {
+    "id_category": "905",
+    "id_parent": "458",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "22/01/2019 21:59",
+    "updated_at": "22/01/2019 21:59"
+  },
+  {
+    "id_category": "906",
+    "id_parent": "458",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "22/01/2019 23:55",
+    "updated_at": "28/01/2019 21:40"
+  },
+  {
+    "id_category": "907",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/01/2019 20:42",
+    "updated_at": "13/08/2019 01:16"
+  },
+  {
+    "id_category": "908",
+    "id_parent": "360",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/01/2019 21:05",
+    "updated_at": "13/08/2019 02:43"
+  },
+  {
+    "id_category": "909",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/01/2019 23:35",
+    "updated_at": "13/08/2019 02:08"
+  },
+  {
+    "id_category": "910",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/01/2019 00:18",
+    "updated_at": "13/08/2019 02:29"
+  },
+  {
+    "id_category": "911",
+    "id_parent": "360",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/01/2019 00:23",
+    "updated_at": "13/08/2019 02:43"
+  },
+  {
+    "id_category": "912",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "30/01/2019 23:35",
+    "updated_at": "13/08/2019 02:32"
+  },
+  {
+    "id_category": "913",
+    "id_parent": "802",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "31/01/2019 00:23",
+    "updated_at": "31/01/2019 00:23"
+  },
+  {
+    "id_category": "914",
+    "id_parent": "663",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/02/2019 19:33",
+    "updated_at": "05/02/2019 19:33"
+  },
+  {
+    "id_category": "915",
+    "id_parent": "663",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/02/2019 19:34",
+    "updated_at": "05/02/2019 19:34"
+  },
+  {
+    "id_category": "916",
+    "id_parent": "892",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/02/2019 19:53",
+    "updated_at": "05/02/2019 19:53"
+  },
+  {
+    "id_category": "917",
+    "id_parent": "802",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/02/2019 20:04",
+    "updated_at": "05/02/2019 20:04"
+  },
+  {
+    "id_category": "918",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "05/02/2019 23:12",
+    "updated_at": "13/08/2019 19:56"
+  },
+  {
+    "id_category": "919",
+    "id_parent": "918",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/02/2019 23:14",
+    "updated_at": "05/02/2019 23:14"
+  },
+  {
+    "id_category": "920",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "05/03/2019 21:52",
+    "updated_at": "09/10/2023 23:52"
+  },
+  {
+    "id_category": "921",
+    "id_parent": "920",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/03/2019 21:53",
+    "updated_at": "05/03/2019 21:53"
+  },
+  {
+    "id_category": "922",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "10/03/2019 21:25",
+    "updated_at": "10/10/2023 00:45"
+  },
+  {
+    "id_category": "923",
+    "id_parent": "922",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/03/2019 21:26",
+    "updated_at": "19/05/2021 19:01"
+  },
+  {
+    "id_category": "924",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:29",
+    "updated_at": "25/09/2020 02:43"
+  },
+  {
+    "id_category": "925",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:29",
+    "updated_at": "25/09/2020 02:22"
+  },
+  {
+    "id_category": "926",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:30",
+    "updated_at": "25/09/2020 02:25"
+  },
+  {
+    "id_category": "927",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:31",
+    "updated_at": "25/09/2020 02:25"
+  },
+  {
+    "id_category": "928",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:32",
+    "updated_at": "25/09/2020 02:27"
+  },
+  {
+    "id_category": "929",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:32",
+    "updated_at": "25/09/2020 02:44"
+  },
+  {
+    "id_category": "930",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:33",
+    "updated_at": "25/09/2020 02:44"
+  },
+  {
+    "id_category": "931",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:34",
+    "updated_at": "25/09/2020 02:22"
+  },
+  {
+    "id_category": "932",
+    "id_parent": "923",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/03/2019 21:35",
+    "updated_at": "25/09/2020 02:31"
+  },
+  {
+    "id_category": "934",
+    "id_parent": "933",
+    "level_depth": "4",
+    "status": "1",
+    "created_at": "11/03/2019 20:15",
+    "updated_at": "11/03/2019 20:15"
+  },
+  {
+    "id_category": "935",
+    "id_parent": "933",
+    "level_depth": "4",
+    "status": "1",
+    "created_at": "11/03/2019 20:21",
+    "updated_at": "11/03/2019 20:21"
+  },
+  {
+    "id_category": "936",
+    "id_parent": "933",
+    "level_depth": "4",
+    "status": "1",
+    "created_at": "11/03/2019 20:22",
+    "updated_at": "11/03/2019 20:22"
+  },
+  {
+    "id_category": "1091",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/05/2021 02:39",
+    "updated_at": "10/05/2021 02:39"
+  },
+  {
+    "id_category": "1090",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/05/2021 02:39",
+    "updated_at": "10/05/2021 02:39"
+  },
+  {
+    "id_category": "1089",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/05/2021 02:37",
+    "updated_at": "10/05/2021 02:37"
+  },
+  {
+    "id_category": "1088",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/05/2021 02:35",
+    "updated_at": "10/05/2021 02:36"
+  },
+  {
+    "id_category": "941",
+    "id_parent": "86",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/03/2019 00:08",
+    "updated_at": "18/03/2019 00:08"
+  },
+  {
+    "id_category": "942",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "24/03/2019 23:48",
+    "updated_at": "13/08/2019 19:55"
+  },
+  {
+    "id_category": "943",
+    "id_parent": "942",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "24/03/2019 23:49",
+    "updated_at": "24/03/2019 23:49"
+  },
+  {
+    "id_category": "944",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/03/2019 20:58",
+    "updated_at": "26/03/2019 20:58"
+  },
+  {
+    "id_category": "945",
+    "id_parent": "920",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/03/2019 21:03",
+    "updated_at": "26/03/2019 21:03"
+  },
+  {
+    "id_category": "946",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/03/2019 21:07",
+    "updated_at": "26/03/2019 21:07"
+  },
+  {
+    "id_category": "947",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/03/2019 21:18",
+    "updated_at": "26/03/2019 21:18"
+  },
+  {
+    "id_category": "1155",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/04/2024 19:48",
+    "updated_at": "18/04/2024 19:48"
+  },
+  {
+    "id_category": "949",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/03/2019 21:44",
+    "updated_at": "26/03/2019 21:44"
+  },
+  {
+    "id_category": "950",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/03/2019 21:51",
+    "updated_at": "24/11/2019 21:19"
+  },
+  {
+    "id_category": "951",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "31/03/2019 21:08",
+    "updated_at": "31/03/2019 21:08"
+  },
+  {
+    "id_category": "952",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "31/03/2019 21:19",
+    "updated_at": "13/08/2019 02:28"
+  },
+  {
+    "id_category": "953",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "31/03/2019 21:27",
+    "updated_at": "09/09/2019 21:21"
+  },
+  {
+    "id_category": "954",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "31/03/2019 21:40",
+    "updated_at": "31/03/2019 21:40"
+  },
+  {
+    "id_category": "955",
+    "id_parent": "920",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "31/03/2019 22:51",
+    "updated_at": "31/03/2019 22:51"
+  },
+  {
+    "id_category": "956",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/04/2019 00:11",
+    "updated_at": "01/04/2019 00:11"
+  },
+  {
+    "id_category": "957",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/04/2019 00:30",
+    "updated_at": "01/04/2019 00:30"
+  },
+  {
+    "id_category": "958",
+    "id_parent": "802",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/04/2019 00:41",
+    "updated_at": "01/04/2019 00:41"
+  },
+  {
+    "id_category": "959",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/04/2019 00:44",
+    "updated_at": "01/04/2019 00:44"
+  },
+  {
+    "id_category": "960",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/04/2019 21:04",
+    "updated_at": "12/12/2019 20:56"
+  },
+  {
+    "id_category": "961",
+    "id_parent": "960",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/04/2019 21:05",
+    "updated_at": "06/05/2021 19:54"
+  },
+  {
+    "id_category": "962",
+    "id_parent": "960",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/04/2019 21:06",
+    "updated_at": "06/05/2021 19:55"
+  },
+  {
+    "id_category": "963",
+    "id_parent": "102",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "09/04/2019 01:10",
+    "updated_at": "16/02/2021 21:16"
+  },
+  {
+    "id_category": "964",
+    "id_parent": "922",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/04/2019 21:35",
+    "updated_at": "10/04/2019 21:35"
+  },
+  {
+    "id_category": "965",
+    "id_parent": "45",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/04/2019 20:57",
+    "updated_at": "17/04/2019 20:57"
+  },
+  {
+    "id_category": "966",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "23/04/2019 22:53",
+    "updated_at": "23/04/2019 22:59"
+  },
+  {
+    "id_category": "967",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/05/2019 02:19",
+    "updated_at": "24/11/2019 19:57"
+  },
+  {
+    "id_category": "968",
+    "id_parent": "967",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/05/2019 21:36",
+    "updated_at": "14/05/2019 21:38"
+  },
+  {
+    "id_category": "969",
+    "id_parent": "967",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/05/2019 21:38",
+    "updated_at": "14/05/2019 21:38"
+  },
+  {
+    "id_category": "970",
+    "id_parent": "967",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/05/2019 21:39",
+    "updated_at": "14/05/2019 21:39"
+  },
+  {
+    "id_category": "971",
+    "id_parent": "967",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/05/2019 22:51",
+    "updated_at": "14/05/2019 22:51"
+  },
+  {
+    "id_category": "972",
+    "id_parent": "967",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "14/05/2019 23:34",
+    "updated_at": "14/05/2019 23:34"
+  },
+  {
+    "id_category": "973",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/05/2019 23:48",
+    "updated_at": "14/05/2019 23:48"
+  },
+  {
+    "id_category": "974",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/05/2019 00:31",
+    "updated_at": "15/05/2019 00:31"
+  },
+  {
+    "id_category": "975",
+    "id_parent": "920",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/05/2019 00:52",
+    "updated_at": "15/05/2019 00:52"
+  },
+  {
+    "id_category": "977",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/05/2019 00:59",
+    "updated_at": "15/05/2019 00:59"
+  },
+  {
+    "id_category": "978",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "15/05/2019 20:58",
+    "updated_at": "09/10/2023 23:57"
+  },
+  {
+    "id_category": "979",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/05/2019 20:58",
+    "updated_at": "15/05/2019 20:58"
+  },
+  {
+    "id_category": "980",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/08/2019 23:33",
+    "updated_at": "23/08/2019 23:38"
+  },
+  {
+    "id_category": "981",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/08/2019 23:36",
+    "updated_at": "23/08/2019 23:36"
+  },
+  {
+    "id_category": "982",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "09/09/2019 22:19",
+    "updated_at": "09/09/2019 22:19"
+  },
+  {
+    "id_category": "983",
+    "id_parent": "982",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/09/2019 22:26",
+    "updated_at": "09/09/2019 22:26"
+  },
+  {
+    "id_category": "984",
+    "id_parent": "982",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/09/2019 22:28",
+    "updated_at": "09/09/2019 22:28"
+  },
+  {
+    "id_category": "985",
+    "id_parent": "982",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/09/2019 22:29",
+    "updated_at": "09/09/2019 22:29"
+  },
+  {
+    "id_category": "986",
+    "id_parent": "129",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/09/2019 02:43",
+    "updated_at": "10/09/2019 02:55"
+  },
+  {
+    "id_category": "987",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "13/09/2019 19:52",
+    "updated_at": "10/10/2023 00:29"
+  },
+  {
+    "id_category": "988",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/09/2019 02:28",
+    "updated_at": "23/09/2019 02:28"
+  },
+  {
+    "id_category": "989",
+    "id_parent": "765",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "23/09/2019 02:34",
+    "updated_at": "23/09/2019 02:34"
+  },
+  {
+    "id_category": "992",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "08/10/2019 21:20",
+    "updated_at": "09/10/2023 23:56"
+  },
+  {
+    "id_category": "993",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/10/2019 01:36",
+    "updated_at": "21/03/2021 19:13"
+  },
+  {
+    "id_category": "994",
+    "id_parent": "990",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "09/10/2019 21:21",
+    "updated_at": "10/10/2019 02:46"
+  },
+  {
+    "id_category": "995",
+    "id_parent": "990",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "09/10/2019 21:23",
+    "updated_at": "10/10/2019 02:45"
+  },
+  {
+    "id_category": "996",
+    "id_parent": "457",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/10/2019 21:14",
+    "updated_at": "10/10/2019 21:14"
+  },
+  {
+    "id_category": "997",
+    "id_parent": "802",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/10/2019 21:24",
+    "updated_at": "28/02/2025 01:15"
+  },
+  {
+    "id_category": "998",
+    "id_parent": "802",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/10/2019 21:27",
+    "updated_at": "10/10/2019 21:27"
+  },
+  {
+    "id_category": "999",
+    "id_parent": "998",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "10/10/2019 21:28",
+    "updated_at": "10/10/2019 21:31"
+  },
+  {
+    "id_category": "1000",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "29/10/2019 00:53",
+    "updated_at": "12/12/2019 20:57"
+  },
+  {
+    "id_category": "1001",
+    "id_parent": "1000",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "30/10/2019 00:43",
+    "updated_at": "30/10/2019 00:43"
+  },
+  {
+    "id_category": "1002",
+    "id_parent": "1000",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "30/10/2019 00:44",
+    "updated_at": "30/10/2019 00:44"
+  },
+  {
+    "id_category": "1003",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:36",
+    "updated_at": "01/11/2019 23:36"
+  },
+  {
+    "id_category": "1004",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:49",
+    "updated_at": "21/03/2021 21:23"
+  },
+  {
+    "id_category": "1005",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:50",
+    "updated_at": "21/03/2021 21:24"
+  },
+  {
+    "id_category": "1006",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:52",
+    "updated_at": "21/03/2021 19:08"
+  },
+  {
+    "id_category": "1007",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:55",
+    "updated_at": "21/03/2021 19:19"
+  },
+  {
+    "id_category": "1008",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:56",
+    "updated_at": "21/03/2021 21:19"
+  },
+  {
+    "id_category": "1009",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:57",
+    "updated_at": "21/03/2021 21:26"
+  },
+  {
+    "id_category": "1010",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:58",
+    "updated_at": "21/03/2021 21:27"
+  },
+  {
+    "id_category": "1011",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/11/2019 23:59",
+    "updated_at": "21/03/2021 21:33"
+  },
+  {
+    "id_category": "1012",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/11/2019 00:01",
+    "updated_at": "09/09/2024 19:36"
+  },
+  {
+    "id_category": "1013",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/11/2019 00:01",
+    "updated_at": "21/03/2021 21:36"
+  },
+  {
+    "id_category": "1014",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/11/2019 00:02",
+    "updated_at": "21/03/2021 21:37"
+  },
+  {
+    "id_category": "1015",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/11/2019 00:03",
+    "updated_at": "21/03/2021 21:38"
+  },
+  {
+    "id_category": "1072",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/03/2021 20:10",
+    "updated_at": "21/03/2021 21:19"
+  },
+  {
+    "id_category": "1017",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/11/2019 01:31",
+    "updated_at": "12/12/2019 19:28"
+  },
+  {
+    "id_category": "1018",
+    "id_parent": "1017",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/11/2019 01:35",
+    "updated_at": "06/11/2019 01:35"
+  },
+  {
+    "id_category": "1019",
+    "id_parent": "1017",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "06/11/2019 01:38",
+    "updated_at": "06/11/2019 01:38"
+  },
+  {
+    "id_category": "1020",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/11/2019 22:38",
+    "updated_at": "06/11/2019 22:38"
+  },
+  {
+    "id_category": "1021",
+    "id_parent": "372",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "07/11/2019 01:34",
+    "updated_at": "07/11/2019 01:34"
+  },
+  {
+    "id_category": "1022",
+    "id_parent": "372",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "07/11/2019 01:40",
+    "updated_at": "07/11/2019 01:40"
+  },
+  {
+    "id_category": "1023",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "07/11/2019 02:33",
+    "updated_at": "07/11/2019 02:33"
+  },
+  {
+    "id_category": "1024",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/11/2019 01:11",
+    "updated_at": "12/12/2019 19:31"
+  },
+  {
+    "id_category": "1025",
+    "id_parent": "1024",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "11/11/2019 01:16",
+    "updated_at": "11/11/2019 01:16"
+  },
+  {
+    "id_category": "1026",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/11/2019 23:50",
+    "updated_at": "15/11/2019 23:50"
+  },
+  {
+    "id_category": "1027",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/11/2019 23:53",
+    "updated_at": "15/11/2019 23:53"
+  },
+  {
+    "id_category": "1028",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/11/2019 23:54",
+    "updated_at": "15/11/2019 23:54"
+  },
+  {
+    "id_category": "1029",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/11/2019 23:56",
+    "updated_at": "15/11/2019 23:56"
+  },
+  {
+    "id_category": "1030",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/11/2019 23:58",
+    "updated_at": "15/11/2019 23:58"
+  },
+  {
+    "id_category": "1031",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "16/11/2019 00:00",
+    "updated_at": "16/11/2019 00:00"
+  },
+  {
+    "id_category": "1032",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "16/11/2019 00:02",
+    "updated_at": "16/11/2019 00:02"
+  },
+  {
+    "id_category": "1033",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "15/01/2020 02:59",
+    "updated_at": "15/01/2020 02:59"
+  },
+  {
+    "id_category": "1034",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/01/2020 20:38",
+    "updated_at": "27/01/2020 20:39"
+  },
+  {
+    "id_category": "1117",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/11/2021 21:13",
+    "updated_at": "09/11/2021 21:13"
+  },
+  {
+    "id_category": "1036",
+    "id_parent": "892",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/01/2020 00:31",
+    "updated_at": "28/01/2020 00:31"
+  },
+  {
+    "id_category": "1037",
+    "id_parent": "494",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/01/2020 00:32",
+    "updated_at": "28/01/2020 00:32"
+  },
+  {
+    "id_category": "1038",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "07/02/2020 21:22",
+    "updated_at": "21/03/2021 19:09"
+  },
+  {
+    "id_category": "1039",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:52",
+    "updated_at": "18/02/2020 20:52"
+  },
+  {
+    "id_category": "1040",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:52",
+    "updated_at": "18/02/2020 20:52"
+  },
+  {
+    "id_category": "1041",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:53",
+    "updated_at": "18/02/2020 20:53"
+  },
+  {
+    "id_category": "1042",
+    "id_parent": "216",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:53",
+    "updated_at": "18/02/2020 20:53"
+  },
+  {
+    "id_category": "1043",
+    "id_parent": "31",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:55",
+    "updated_at": "18/02/2020 20:55"
+  },
+  {
+    "id_category": "1044",
+    "id_parent": "32",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:56",
+    "updated_at": "18/02/2020 20:56"
+  },
+  {
+    "id_category": "1045",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:56",
+    "updated_at": "18/02/2020 20:56"
+  },
+  {
+    "id_category": "1046",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:57",
+    "updated_at": "18/02/2020 20:57"
+  },
+  {
+    "id_category": "1047",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:57",
+    "updated_at": "18/02/2020 20:57"
+  },
+  {
+    "id_category": "1048",
+    "id_parent": "5",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:58",
+    "updated_at": "18/02/2020 20:58"
+  },
+  {
+    "id_category": "1049",
+    "id_parent": "214",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:59",
+    "updated_at": "18/02/2020 20:59"
+  },
+  {
+    "id_category": "1050",
+    "id_parent": "214",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/02/2020 20:59",
+    "updated_at": "18/02/2020 20:59"
+  },
+  {
+    "id_category": "1051",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "07/06/2020 23:57",
+    "updated_at": "10/10/2023 02:13"
+  },
+  {
+    "id_category": "1052",
+    "id_parent": "1051",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "07/06/2020 23:59",
+    "updated_at": "10/10/2023 02:15"
+  },
+  {
+    "id_category": "1149",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "12/10/2023 19:09",
+    "updated_at": "12/10/2023 19:12"
+  },
+  {
+    "id_category": "1057",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "16/02/2021 21:27",
+    "updated_at": "17/02/2021 20:50"
+  },
+  {
+    "id_category": "1055",
+    "id_parent": "942",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/02/2021 00:40",
+    "updated_at": "02/02/2021 01:20"
+  },
+  {
+    "id_category": "1069",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/02/2021 01:55",
+    "updated_at": "17/02/2021 01:55"
+  },
+  {
+    "id_category": "1070",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/02/2021 20:48",
+    "updated_at": "21/03/2021 21:34"
+  },
+  {
+    "id_category": "1071",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "21/02/2021 19:07",
+    "updated_at": "21/02/2021 19:07"
+  },
+  {
+    "id_category": "1073",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/03/2021 22:13",
+    "updated_at": "21/03/2021 21:23"
+  },
+  {
+    "id_category": "1074",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/05/2021 23:29",
+    "updated_at": "05/05/2021 01:25"
+  },
+  {
+    "id_category": "1075",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/05/2021 23:40",
+    "updated_at": "05/05/2021 01:25"
+  },
+  {
+    "id_category": "1076",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "04/05/2021 23:53",
+    "updated_at": "05/05/2021 01:26"
+  },
+  {
+    "id_category": "1077",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/05/2021 00:18",
+    "updated_at": "05/05/2021 01:26"
+  },
+  {
+    "id_category": "1078",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/05/2021 00:24",
+    "updated_at": "05/05/2021 01:26"
+  },
+  {
+    "id_category": "1079",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/05/2021 00:29",
+    "updated_at": "05/09/2025 21:17"
+  },
+  {
+    "id_category": "1080",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/05/2021 01:16",
+    "updated_at": "05/09/2025 21:39"
+  },
+  {
+    "id_category": "1081",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "05/05/2021 01:55",
+    "updated_at": "05/05/2021 01:58"
+  },
+  {
+    "id_category": "1082",
+    "id_parent": "1081",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/05/2021 02:00",
+    "updated_at": "05/05/2021 02:00"
+  },
+  {
+    "id_category": "1083",
+    "id_parent": "1081",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/05/2021 02:01",
+    "updated_at": "05/05/2021 02:01"
+  },
+  {
+    "id_category": "1084",
+    "id_parent": "1081",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/05/2021 02:01",
+    "updated_at": "05/05/2021 02:01"
+  },
+  {
+    "id_category": "1085",
+    "id_parent": "1081",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/05/2021 02:02",
+    "updated_at": "05/05/2021 02:02"
+  },
+  {
+    "id_category": "1086",
+    "id_parent": "1081",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/05/2021 02:02",
+    "updated_at": "05/05/2021 02:02"
+  },
+  {
+    "id_category": "1087",
+    "id_parent": "1081",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "05/05/2021 02:03",
+    "updated_at": "05/05/2021 02:03"
+  },
+  {
+    "id_category": "1092",
+    "id_parent": "494",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2021 18:34",
+    "updated_at": "19/05/2021 18:34"
+  },
+  {
+    "id_category": "1093",
+    "id_parent": "922",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2021 19:04",
+    "updated_at": "19/05/2021 19:04"
+  },
+  {
+    "id_category": "1094",
+    "id_parent": "922",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2021 19:06",
+    "updated_at": "19/05/2021 19:09"
+  },
+  {
+    "id_category": "1095",
+    "id_parent": "922",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2021 19:07",
+    "updated_at": "19/05/2021 19:07"
+  },
+  {
+    "id_category": "1096",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2021 20:13",
+    "updated_at": "19/05/2021 20:13"
+  },
+  {
+    "id_category": "1097",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2021 21:13",
+    "updated_at": "19/05/2021 21:13"
+  },
+  {
+    "id_category": "1098",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "19/05/2021 21:39",
+    "updated_at": "19/05/2021 21:39"
+  },
+  {
+    "id_category": "1099",
+    "id_parent": "1098",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/05/2021 21:39",
+    "updated_at": "19/05/2021 21:39"
+  },
+  {
+    "id_category": "1100",
+    "id_parent": "1098",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "19/05/2021 21:40",
+    "updated_at": "19/05/2021 21:40"
+  },
+  {
+    "id_category": "1101",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "20/05/2021 23:23",
+    "updated_at": "20/05/2021 23:23"
+  },
+  {
+    "id_category": "1102",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "21/05/2021 20:06",
+    "updated_at": "21/05/2021 20:07"
+  },
+  {
+    "id_category": "1103",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "25/05/2021 02:28",
+    "updated_at": "26/05/2021 22:33"
+  },
+  {
+    "id_category": "1104",
+    "id_parent": "1103",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "25/05/2021 02:29",
+    "updated_at": "26/05/2021 22:33"
+  },
+  {
+    "id_category": "1109",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/05/2021 00:38",
+    "updated_at": "27/05/2021 00:38"
+  },
+  {
+    "id_category": "1106",
+    "id_parent": "1103",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "25/05/2021 02:31",
+    "updated_at": "26/05/2021 23:37"
+  },
+  {
+    "id_category": "1108",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/05/2021 00:18",
+    "updated_at": "27/05/2021 00:18"
+  },
+  {
+    "id_category": "1110",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/05/2021 01:41",
+    "updated_at": "27/05/2021 01:41"
+  },
+  {
+    "id_category": "1111",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "16/06/2021 19:23",
+    "updated_at": "16/06/2021 19:38"
+  },
+  {
+    "id_category": "1112",
+    "id_parent": "988",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "09/07/2021 20:42",
+    "updated_at": "02/11/2023 21:26"
+  },
+  {
+    "id_category": "1113",
+    "id_parent": "988",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "09/07/2021 20:43",
+    "updated_at": "02/11/2023 21:27"
+  },
+  {
+    "id_category": "1114",
+    "id_parent": "922",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "13/07/2021 20:44",
+    "updated_at": "13/07/2021 20:44"
+  },
+  {
+    "id_category": "1115",
+    "id_parent": "458",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "13/07/2021 21:31",
+    "updated_at": "13/07/2021 21:31"
+  },
+  {
+    "id_category": "1116",
+    "id_parent": "892",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "10/09/2021 00:09",
+    "updated_at": "10/09/2021 00:09"
+  },
+  {
+    "id_category": "1118",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/11/2021 21:15",
+    "updated_at": "09/11/2021 21:15"
+  },
+  {
+    "id_category": "1119",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/11/2021 21:16",
+    "updated_at": "09/11/2021 21:16"
+  },
+  {
+    "id_category": "1121",
+    "id_parent": "28",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/07/2022 01:09",
+    "updated_at": "18/07/2022 01:09"
+  },
+  {
+    "id_category": "1122",
+    "id_parent": "572",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/07/2022 01:11",
+    "updated_at": "18/07/2022 01:11"
+  },
+  {
+    "id_category": "1123",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "18/07/2022 01:12",
+    "updated_at": "18/07/2022 01:12"
+  },
+  {
+    "id_category": "1124",
+    "id_parent": "26",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "22/07/2022 19:36",
+    "updated_at": "22/07/2022 19:36"
+  },
+  {
+    "id_category": "1125",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/08/2022 23:53",
+    "updated_at": "11/08/2022 23:53"
+  },
+  {
+    "id_category": "1126",
+    "id_parent": "978",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "21/02/2023 22:10",
+    "updated_at": "05/09/2025 21:41"
+  },
+  {
+    "id_category": "1127",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "22/02/2023 01:17",
+    "updated_at": "22/02/2023 01:17"
+  },
+  {
+    "id_category": "1129",
+    "id_parent": "377",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/02/2023 23:44",
+    "updated_at": "23/02/2023 23:44"
+  },
+  {
+    "id_category": "1133",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/02/2023 20:12",
+    "updated_at": "26/02/2023 20:12"
+  },
+  {
+    "id_category": "1134",
+    "id_parent": "748",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "26/02/2023 23:05",
+    "updated_at": "26/02/2023 23:05"
+  },
+  {
+    "id_category": "1132",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "24/02/2023 00:22",
+    "updated_at": "24/02/2023 00:22"
+  },
+  {
+    "id_category": "1135",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "27/02/2023 23:04",
+    "updated_at": "10/10/2023 00:13"
+  },
+  {
+    "id_category": "1138",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "28/02/2023 22:54",
+    "updated_at": "10/10/2023 00:17"
+  },
+  {
+    "id_category": "1137",
+    "id_parent": "1135",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/02/2023 23:05",
+    "updated_at": "27/02/2023 23:05"
+  },
+  {
+    "id_category": "1140",
+    "id_parent": "1138",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/02/2023 22:55",
+    "updated_at": "28/02/2023 22:55"
+  },
+  {
+    "id_category": "1141",
+    "id_parent": "234",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/03/2023 20:59",
+    "updated_at": "01/03/2023 20:59"
+  },
+  {
+    "id_category": "1142",
+    "id_parent": "1",
+    "level_depth": "1",
+    "status": "1",
+    "created_at": "09/06/2023 20:45",
+    "updated_at": "12/06/2024 23:27"
+  },
+  {
+    "id_category": "1143",
+    "id_parent": "1142",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "09/06/2023 20:48",
+    "updated_at": "12/06/2024 23:29"
+  },
+  {
+    "id_category": "1144",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "27/07/2023 23:21",
+    "updated_at": "27/07/2023 23:21"
+  },
+  {
+    "id_category": "1145",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/08/2023 00:35",
+    "updated_at": "11/08/2023 00:35"
+  },
+  {
+    "id_category": "1146",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "11/08/2023 00:53",
+    "updated_at": "11/08/2023 00:53"
+  },
+  {
+    "id_category": "1147",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "14/09/2023 19:25",
+    "updated_at": "14/09/2023 19:27"
+  },
+  {
+    "id_category": "1153",
+    "id_parent": "42",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/03/2024 00:46",
+    "updated_at": "28/03/2024 00:47"
+  },
+  {
+    "id_category": "1150",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "12/10/2023 20:33",
+    "updated_at": "12/10/2023 20:33"
+  },
+  {
+    "id_category": "1156",
+    "id_parent": "1155",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/04/2024 19:49",
+    "updated_at": "18/04/2024 19:49"
+  },
+  {
+    "id_category": "1158",
+    "id_parent": "1155",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "18/04/2024 19:51",
+    "updated_at": "18/04/2024 19:51"
+  },
+  {
+    "id_category": "1159",
+    "id_parent": "1017",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "27/05/2024 02:36",
+    "updated_at": "27/05/2024 02:36"
+  },
+  {
+    "id_category": "1160",
+    "id_parent": "681",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/05/2024 20:31",
+    "updated_at": "28/05/2024 20:31"
+  },
+  {
+    "id_category": "1161",
+    "id_parent": "987",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/07/2024 01:39",
+    "updated_at": "23/07/2024 01:39"
+  },
+  {
+    "id_category": "1162",
+    "id_parent": "987",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "23/07/2024 01:44",
+    "updated_at": "23/07/2024 01:44"
+  },
+  {
+    "id_category": "1163",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "30/07/2024 22:13",
+    "updated_at": "03/10/2024 20:10"
+  },
+  {
+    "id_category": "1164",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "30/07/2024 22:44",
+    "updated_at": "03/10/2024 20:10"
+  },
+  {
+    "id_category": "1165",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/08/2024 20:12",
+    "updated_at": "02/08/2024 02:33"
+  },
+  {
+    "id_category": "1166",
+    "id_parent": "13",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "06/08/2024 01:11",
+    "updated_at": "06/08/2024 01:11"
+  },
+  {
+    "id_category": "1171",
+    "id_parent": "802",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/09/2024 19:37",
+    "updated_at": "02/09/2024 19:37"
+  },
+  {
+    "id_category": "1170",
+    "id_parent": "660",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/09/2024 18:25",
+    "updated_at": "02/09/2024 18:25"
+  },
+  {
+    "id_category": "1172",
+    "id_parent": "892",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "02/09/2024 21:20",
+    "updated_at": "02/09/2024 21:20"
+  },
+  {
+    "id_category": "1173",
+    "id_parent": "708",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "03/10/2024 20:16",
+    "updated_at": "03/10/2024 20:16"
+  },
+  {
+    "id_category": "1174",
+    "id_parent": "816",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "17/02/2025 19:12",
+    "updated_at": "17/02/2025 19:26"
+  },
+  {
+    "id_category": "1175",
+    "id_parent": "992",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "17/02/2025 19:42",
+    "updated_at": "17/02/2025 19:42"
+  },
+  {
+    "id_category": "1176",
+    "id_parent": "96",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "20/02/2025 19:16",
+    "updated_at": "20/02/2025 19:17"
+  },
+  {
+    "id_category": "1177",
+    "id_parent": "802",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "28/02/2025 01:17",
+    "updated_at": "28/02/2025 01:17"
+  },
+  {
+    "id_category": "1178",
+    "id_parent": "724",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "31/07/2025 00:58",
+    "updated_at": "31/07/2025 00:58"
+  },
+  {
+    "id_category": "1179",
+    "id_parent": "237",
+    "level_depth": "3",
+    "status": "1",
+    "created_at": "03/08/2025 22:27",
+    "updated_at": "03/08/2025 22:27"
+  },
+  {
+    "id_category": "1180",
+    "id_parent": "1051",
+    "level_depth": "2",
+    "status": "1",
+    "created_at": "01/09/2025 20:55",
+    "updated_at": "01/09/2025 20:55"
+  }
+]
