@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class UserSeeder extends Seeder
 {
@@ -17,14 +18,14 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Raja KANTOR',
                 'email' => 'info@rajakantor.com',
-                'password' => 'dcb312270cdbbc86246c9a1a9bb8e59a',
+                'password' => Hash::make('dcb312270cdbbc86246c9a1a9bb8e59a'),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
                 'name' => 'Husen MARKETBIZ',
                 'email' => 'husen@marketbiz.net',
-                'password' => '184bc33a5a14945f88912e0976e6a2c7',
+                'password' => Hash::make('184bc33a5a14945f88912e0976e6a2c7'),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

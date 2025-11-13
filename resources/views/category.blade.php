@@ -11,10 +11,16 @@
 @endsection
 @section('og_image')
      @php
-          $imagePath = 'images/category/' . $category->id_category . '.jpg';
-          $imageUrl = file_exists(public_path($imagePath))
-              ? asset($imagePath)
-              : $siteSettings->logo;
+          $publicPath = 'images/category/' . $category->id_category . '.jpg';
+          $storagePath = 'storage/category/' . $category->id_category . '.jpg';
+
+          if (file_exists(public_path($storagePath))) {
+              $imageUrl = asset($storagePath);
+          } elseif (file_exists(public_path($publicPath))) {
+              $imageUrl = asset($publicPath);
+          }  else {
+              $imageUrl = $siteSettings->logo;
+          }
       @endphp
     {{ $imageUrl }}
 @endsection
@@ -35,16 +41,22 @@
       <div class="font-bold text-lg text-[#333] mb-4">{{ $category->name }}</div>
 
       @php
-          $imagePath = 'images/category/' . $category->id_category . '.jpg';
-          $imageUrl = file_exists(public_path($imagePath))
-              ? asset($imagePath)
-              : asset('images/product/en.jpg');
+          $publicPath = 'images/category/' . $category->id_category . '.jpg';
+          $storagePath = 'storage/category/' . $category->id_category . '.jpg';
+
+          if (file_exists(public_path($storagePath))) {
+              $imageUrl = asset($storagePath);
+          } elseif (file_exists(public_path($publicPath))) {
+              $imageUrl = asset($publicPath);
+          }  else {
+              $imageUrl = asset('images/product/en.jpg');
+          }
       @endphp
 
       <img 
           src="{{ $imageUrl }}" 
           alt="{{ $category->name }}" 
-          class="w-full h-40 object-contain mb-4 border border-gray-300" 
+          class="w-full object-contain mb-4 border border-gray-300" 
       />
 
 
@@ -63,9 +75,17 @@
             @foreach($children as $child)
               <div class="bg-gray-100 text-center p-2 border border-gray-300 text-[12px] hover:shadow-md transition">
                 @php
-                  $categoryImagePath = 'images/category/' . $child->id_category . '.jpg';
-                  $imageExists = file_exists(public_path($categoryImagePath));
-                  $imageSrc = $imageExists ? asset($categoryImagePath) : asset('images/product/en.jpg');
+                  $publicPath = 'images/category/' . $child->id_category . '.jpg';
+                  $storagePath = 'storage/category/' . $child->id_category . '.jpg';
+
+                  if (file_exists(public_path($storagePath))) {
+                      $imageSrc = asset($storagePath);
+                  } elseif (file_exists(public_path($publicPath))) {
+                      $imageSrc = asset($publicPath);
+                  }  else {
+                      $imageSrc = asset('images/product/en.jpg');
+                  }
+
                 @endphp
 
                 <img 

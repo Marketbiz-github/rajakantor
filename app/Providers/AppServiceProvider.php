@@ -111,13 +111,25 @@ class AppServiceProvider extends ServiceProvider
                     ->toArray();
 
                 foreach ($latestProducts as $p) {
+                    // Ubah objek ke array biasa
                     $pArr = json_decode(json_encode($p), true);
-                    $pArr['image'] = null;
+                    $pArr['image'] = 'images/product/en.jpg';
 
                     foreach ($images as $img) {
                         if ($img->id_product == $p->id_product) {
-                            $pArr['image'] = 'images/product/' . $img->id_product . '-' . $img->id_image . '.jpg';
-                            break;
+                            // Path untuk public & storage
+                            $public = public_path('images/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+                            $storage = storage_path('app/public/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+
+                            if (file_exists($storage)) {
+                                $pArr['image'] = 'product/' . $img->id_product . '-' . $img->id_image . '.jpg';
+                            } elseif (file_exists($public)) {
+                                $pArr['image'] = 'images/product/' . $img->id_product . '-' . $img->id_image . '.jpg';
+                            }  else {
+                                $pArr['image'] = 'images/product/en.jpg'; // fallback optional
+                            }
+
+                            break; // Stop setelah ketemu gambar pertama
                         }
                     }
 
@@ -125,11 +137,19 @@ class AppServiceProvider extends ServiceProvider
                 }
             }
 
+            // dd($latestArray);
+
             $view->with([
                 'siteSettings' => $siteSettings,
                 'categories' => $treeArray,
                 'latestProducts' => $latestArray,
             ]);
+        });
+
+        View::composer('layouts.app-admin', function ($view) {
+            // Get site settings
+            $siteSettings = SiteSetting::first();
+            $view->with('siteSettings', $siteSettings);
         });
     }
 }

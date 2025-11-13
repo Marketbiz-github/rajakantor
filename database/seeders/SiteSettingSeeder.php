@@ -21,7 +21,7 @@ class SiteSettingSeeder extends Seeder
 
         DB::table('site_settings')->insert([
             'site_name' => 'Raja Kantor',
-            'logo' => 'images/logo-old.png',
+            'logo' => 'images/logo-old.jpg',
             'favicon' => 'images/favicon.ico',
             'meta_title' => 'Jual Meja Kantor - Jual Kursi Kantor - Distributor Meja Kursi Kantor',
             'meta_description' => 'Distributor kursi kantor dan meja kantor, brankas, meja gambar dan mesin absensi serta peralatan kantor lainnya, dengan mutu terbaik dari rajakantor.com',
@@ -42,7 +42,7 @@ class SiteSettingSeeder extends Seeder
 <p>&nbsp;</p>
 <p><span style="font-size: medium;">Dedi Surachman</span></p>',
             'information' => '
-        <p style="padding-left:1em;"><strong>Raja Kantor</strong><br>
+        <p style=""><strong>Raja Kantor</strong><br>
             Jl. Otista Raya No 143, cawang 13330<br>
             Jakarta Timur<br>
             Tlp : 021 857 0831           
@@ -55,12 +55,12 @@ class SiteSettingSeeder extends Seeder
             <li>0821 2222 0503</li>
         </ul>
 
-        <p style="padding:1em 1em;">WA : 082122220503 </p>
-        <p style="padding:1em 1em;">Fax : 021 857 0830 </p>
-        <p style="padding:1em 1em;">E-mail : info@rajakantor.com</p>
-        <p style="padding:1em 1em;"><a href="https://goo.gl/maps/tmCTW5NeRVQ2">Lihat Peta</a></p>
+        <p style="">WA : 082122220503 </p>
+        <p style="">Fax : 021 857 0830 </p>
+        <p style="">E-mail : info@rajakantor.com</p>
+        <p style=""><a href="https://goo.gl/maps/tmCTW5NeRVQ2">Lihat Peta</a></p>
         <hr>
-        <p style="padding-left:1em">
+        <p style="">
             <strong>Raja Kantor Surabaya</strong><br>
             Jl. Rungkut Mejoyo 2 no 23,<br>
             Kalirungkut (samping kampus UBAYA),<br>
@@ -71,10 +71,10 @@ class SiteSettingSeeder extends Seeder
             <li>0878 5312 0306</li>
             <li>0822 4592 3208</li>
          </ul>
-        <p style="padding:1em 1em;">Fax : 031 847 9257</p>
-        <p style="padding:1em 1em;">E-mail : rajakantorsurabaya@yahoo.com</p>
+        <p style="">Fax : 031 847 9257</p>
+        <p style="">E-mail : rajakantorsurabaya@yahoo.com</p>
         <hr>
-         <p style="padding-left:1em">
+         <p style="">
             <strong>Raja Kantor Bandung</strong><br>
             Jl. Terusan Buah Batu,<br>
             Cipagalo, No 307 (dekat pintu tol buah batu),<br>
@@ -85,9 +85,9 @@ class SiteSettingSeeder extends Seeder
             <li>0822 1003 0307</li>
             <li>022 8752 9842</li>
          </ul>
-         <p style="padding:1em 1em;">Fax : 022 8752 9842</p>
+         <p style="">Fax : 022 8752 9842</p>
         <hr>
-         <p style="padding-left:1em">
+         <p style="">
             <strong>Raja Kantor Semarang</strong><br>
             Jl. Wolter Monginsidi No.8,<br>
             ( samping golden futsal )
@@ -99,9 +99,9 @@ class SiteSettingSeeder extends Seeder
             <li>081901435351</li>
             <li>081222313154</li>
          </ul>
-         <p style="padding:1em 1em;">Fax : 024 7641 3369</p>
+         <p style="">Fax : 024 7641 3369</p>
         <hr>
-         <p style="padding-left:1em">
+         <p style="">
             <strong>Raja Kantor Bogor</strong><br>
             Jl. KH. Abdullah Bin Nuh kota bogor, Jawa Barat<br>
         </p>
@@ -109,9 +109,9 @@ class SiteSettingSeeder extends Seeder
             <li>0813 2222 6181</li>
             <li>0877 819999 11</li>
          </ul>
-         <p style="padding:1em 1em;">Email : pusatalatkantor@yahoo.com</p>
+         <p style="">Email : pusatalatkantor@yahoo.com</p>
         <hr>
-         <p style="padding-left:1em">
+         <p style="">
             <strong>Raja Kantor Makassar</strong><br>
             Coming Soon<br>
         </p>
@@ -119,9 +119,9 @@ class SiteSettingSeeder extends Seeder
             <li>0821 2222 0503</li>
             <!--<li>0878 7833 4455</li>-->
          </ul>
-         <p style="padding:1em 1em;">Email : info@rajakantor.com</p>
+         <p style="">Email : info@rajakantor.com</p>
         <hr>
-        <p style="padding-left:1em">
+        <p style="">
             <strong>Raja Kantor Bali</strong><br>
             Coming Soon<br>
             Denpasar
@@ -130,23 +130,23 @@ class SiteSettingSeeder extends Seeder
             <li>0821 2222 0503</li>
             <!--<li>0878 7833 4455</li>-->
          </ul>
-         <p style="padding:1em 1em;">Email : info@rajakantor.com</p>
+         <p style="">Email : info@rajakantor.com</p>
         <hr>
-        <p style="padding-left:1em">
+        <p style="">
           
             <strong>Available at</strong><br>
             <a href="https://www.bukalapak.com/u/pusatalatkantor">
-            <img src="https://www.rajakantor.com/themes/marketbiz-theme/img/bukalapak_logo.png" width="150">
+            <img src="https://www.rajakantor.com/images/bukalapak_logo.png" width="160">
             </a>
             <a href="https://www.tokopedia.com/rajakantor">
-            <img src="https://www.rajakantor.com/themes/marketbiz-theme/img/tokopedia_logo.png" width="150">
+            <img src="https://www.rajakantor.com/images/tokopedia_logo.png" width="160">
             </a>
         </p>',
             'wa' => '628161360607',
             'wa_order' => '628161360607',
             'slider' => json_encode(['images/slide/slider1.png', 'images/slide/slider2.png', 'images/slide/slider3.png']),
             'banner_sidebar' => 'images/banner/LAYANAN-PENGADUAN.jpg',
-            'banner_home_top' => 'images/banner/BANNER WEB 16 THN.jpg',
+            'banner_home_top' => 'images/banner/BANNER WEB 17.jpg',
             'banner_home_bottom' => 'images/banner/bannernew.jpeg',
             'terms' => null,
             'client' => '<ul>

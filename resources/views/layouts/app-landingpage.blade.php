@@ -22,6 +22,8 @@
   <meta name="twitter:description" content="@yield('meta_description', $siteSettings->meta_description ?? '')">
   <meta name="twitter:image" content="@yield('og_image', asset($siteSettings->logo))">
 
+  <link rel="icon" type="image/png" href="{{ asset($siteSettings->favicon) }}">
+  
   @vite('resources/css/app.css')
   <script src="//unpkg.com/alpinejs" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"/>
@@ -80,7 +82,7 @@
     {{-- Left banner --}}
     <div class="w-full md:w-[400px] h-[200px] md:h-[252px] bg-cover bg-no-repeat text-white flex flex-col gap-2 items-start"
          style="background-image: url('{{ asset('images/rajlef.gif') }}')">
-      <img src="{{ asset('images/logo-old.jpg') }}" alt="logo" class="h-[50px] md:min-h-[66px]" />
+      <img src="{{ asset($siteSettings->logo) }}" alt="logo" class="h-[50px] md:min-h-[66px]" />
       <div class="text-[20px] md:text-[26px] italic opacity-95 leading-tight p-6">“Your Office Equipment And Furniture”</div>
     </div>
 

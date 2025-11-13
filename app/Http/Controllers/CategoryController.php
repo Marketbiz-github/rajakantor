@@ -84,13 +84,26 @@ class CategoryController extends Controller
                 ->keyBy('id_product');
 
             // Attach images to products
-            foreach ($productsPaginated as $product) {
+            $productsPaginated->each(function ($product) use ($images) {
                 $product->images = [];
                 if (isset($images[$product->id_product])) {
                     $img = $images[$product->id_product];
-                    $product->images[] = 'images/product/' . $img->id_product . '-' . $img->id_image . '.jpg';
+                    
+                    $oldPath = public_path('images/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+                    $newPath = storage_path('app/public/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+
+                    if (file_exists($oldPath)) {
+                        // Gambar lama (public/images)
+                        $product->images[] = asset('images/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+                    } elseif (file_exists($newPath)) {
+                        // Gambar baru (storage/app/public)
+                        $product->images[] = asset('storage/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+                    } else {
+                        // Gambar tidak ditemukan (opsional: fallback)
+                        $product->images[] = asset('images/product/en.jpg');
+                    }
                 }
-            }
+            });
         }
 
         return view('category', compact('siteSettings', 'category', 'children', 'productsPaginated'));
