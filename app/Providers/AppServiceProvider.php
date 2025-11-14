@@ -122,7 +122,7 @@ class AppServiceProvider extends ServiceProvider
                             $storage = storage_path('app/public/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
 
                             if (file_exists($storage)) {
-                                $pArr['image'] = 'product/' . $img->id_product . '-' . $img->id_image . '.jpg';
+                                $pArr['image'] = 'storage/product/' . $img->id_product . '-' . $img->id_image . '.jpg';
                             } elseif (file_exists($public)) {
                                 $pArr['image'] = 'images/product/' . $img->id_product . '-' . $img->id_image . '.jpg';
                             }  else {
