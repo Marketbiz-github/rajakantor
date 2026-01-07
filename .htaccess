@@ -1,0 +1,10 @@
+# Redirect semua permintaan ke folder public
+RewriteEngine On
+
+# Pastikan tidak loop redirect
+RewriteCond %{REQUEST_URI} !^/public/
+
+# Arahkan semua ke public/
+RewriteRule ^(.*)$ public/$1 [L]
+
+
