@@ -29,6 +29,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"/>
 
   @yield('style')
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWGBMS9E1M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LWGBMS9E1M');
+  </script>
 </head>
 <body class="min-h-screen bg-[#31302c] text-[#222] font-[Verdana,Arial,Helvetica,sans-serif] antialiased">
 

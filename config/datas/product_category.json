@@ -1441,7 +1441,7 @@
   },
   {
     "id_product": "223",
-    "id_category": "1",
+    "id_category": "43",
     "on_sale": "0",
     "status": "1",
     "created_at": "01/11/2012 22:55",
@@ -1449,7 +1449,7 @@
   },
   {
     "id_product": "224",
-    "id_category": "1",
+    "id_category": "43",
     "on_sale": "0",
     "status": "1",
     "created_at": "01/11/2012 23:04",
@@ -2025,7 +2025,7 @@
   },
   {
     "id_product": "297",
-    "id_category": "1",
+    "id_category": "535",
     "on_sale": "0",
     "status": "1",
     "created_at": "27/11/2012 19:31",
@@ -2033,7 +2033,7 @@
   },
   {
     "id_product": "298",
-    "id_category": "1",
+    "id_category": "535",
     "on_sale": "0",
     "status": "1",
     "created_at": "27/11/2012 19:34",
@@ -2041,7 +2041,7 @@
   },
   {
     "id_product": "299",
-    "id_category": "1",
+    "id_category": "535",
     "on_sale": "0",
     "status": "1",
     "created_at": "27/11/2012 19:37",
@@ -2049,7 +2049,7 @@
   },
   {
     "id_product": "300",
-    "id_category": "1",
+    "id_category": "535",
     "on_sale": "0",
     "status": "1",
     "created_at": "27/11/2012 19:40",
@@ -2057,7 +2057,7 @@
   },
   {
     "id_product": "301",
-    "id_category": "1",
+    "id_category": "535",
     "on_sale": "0",
     "status": "1",
     "created_at": "27/11/2012 19:43",
@@ -2073,7 +2073,7 @@
   },
   {
     "id_product": "303",
-    "id_category": "1",
+    "id_category": "535",
     "on_sale": "0",
     "status": "1",
     "created_at": "27/11/2012 19:47",
@@ -2081,7 +2081,7 @@
   },
   {
     "id_product": "304",
-    "id_category": "1",
+    "id_category": "535",
     "on_sale": "0",
     "status": "1",
     "created_at": "27/11/2012 19:49",
@@ -2089,7 +2089,7 @@
   },
   {
     "id_product": "305",
-    "id_category": "1",
+    "id_category": "535",
     "on_sale": "0",
     "status": "1",
     "created_at": "27/11/2012 19:56",
@@ -2577,7 +2577,7 @@
   },
   {
     "id_product": "383",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 04:42",
@@ -2585,7 +2585,7 @@
   },
   {
     "id_product": "384",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 04:45",
@@ -2593,7 +2593,7 @@
   },
   {
     "id_product": "385",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 04:49",
@@ -2601,7 +2601,7 @@
   },
   {
     "id_product": "386",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 04:51",
@@ -2609,7 +2609,7 @@
   },
   {
     "id_product": "387",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 04:54",
@@ -2617,7 +2617,7 @@
   },
   {
     "id_product": "388",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 04:56",
@@ -2625,7 +2625,7 @@
   },
   {
     "id_product": "389",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 05:01",
@@ -2633,7 +2633,7 @@
   },
   {
     "id_product": "390",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 05:03",
@@ -2641,7 +2641,7 @@
   },
   {
     "id_product": "391",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 05:05",
@@ -2649,7 +2649,7 @@
   },
   {
     "id_product": "392",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 05:07",
@@ -2657,7 +2657,7 @@
   },
   {
     "id_product": "393",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 05:11",
@@ -2665,7 +2665,7 @@
   },
   {
     "id_product": "394",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 05:13",
@@ -2673,7 +2673,7 @@
   },
   {
     "id_product": "395",
-    "id_category": "1",
+    "id_category": "536",
     "on_sale": "0",
     "status": "1",
     "created_at": "29/11/2012 05:22",
@@ -20329,7 +20329,7 @@
   },
   {
     "id_product": "6160",
-    "id_category": "1",
+    "id_category": "962",
     "on_sale": "0",
     "status": "1",
     "created_at": "10/05/2021 01:35",
@@ -36673,7 +36673,7 @@
   },
   {
     "id_product": "5005",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "11/09/2019 21:01",
@@ -36681,7 +36681,7 @@
   },
   {
     "id_product": "5007",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "11/09/2019 21:13",
@@ -36689,7 +36689,7 @@
   },
   {
     "id_product": "5009",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "11/09/2019 21:31",
@@ -36705,7 +36705,7 @@
   },
   {
     "id_product": "5011",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "11/09/2019 21:46",
@@ -36721,7 +36721,7 @@
   },
   {
     "id_product": "5013",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "11/09/2019 21:49",
@@ -36729,7 +36729,7 @@
   },
   {
     "id_product": "5014",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "11/09/2019 22:05",
@@ -36737,7 +36737,7 @@
   },
   {
     "id_product": "5015",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "11/09/2019 23:45",
@@ -36745,7 +36745,7 @@
   },
   {
     "id_product": "5016",
-    "id_category": "1",
+    "id_category": "772",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 00:12",
@@ -36753,7 +36753,7 @@
   },
   {
     "id_product": "5017",
-    "id_category": "1",
+    "id_category": "772",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 00:20",
@@ -36761,7 +36761,7 @@
   },
   {
     "id_product": "5018",
-    "id_category": "1",
+    "id_category": "772",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 00:25",
@@ -36769,7 +36769,7 @@
   },
   {
     "id_product": "5019",
-    "id_category": "1",
+    "id_category": "777",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 00:32",
@@ -36777,7 +36777,7 @@
   },
   {
     "id_product": "5020",
-    "id_category": "1",
+    "id_category": "777",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 00:36",
@@ -36793,7 +36793,7 @@
   },
   {
     "id_product": "5022",
-    "id_category": "1",
+    "id_category": "777",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 00:49",
@@ -36801,7 +36801,7 @@
   },
   {
     "id_product": "5023",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 00:56",
@@ -36817,7 +36817,7 @@
   },
   {
     "id_product": "5025",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 01:02",
@@ -36825,7 +36825,7 @@
   },
   {
     "id_product": "5026",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 01:07",
@@ -36833,7 +36833,7 @@
   },
   {
     "id_product": "5027",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 01:12",
@@ -36841,7 +36841,7 @@
   },
   {
     "id_product": "5028",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 01:20",
@@ -36849,7 +36849,7 @@
   },
   {
     "id_product": "5029",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 01:27",
@@ -36857,7 +36857,7 @@
   },
   {
     "id_product": "5030",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 02:14",
@@ -36865,7 +36865,7 @@
   },
   {
     "id_product": "5031",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 02:23",
@@ -36873,7 +36873,7 @@
   },
   {
     "id_product": "5032",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 02:31",
@@ -36881,7 +36881,7 @@
   },
   {
     "id_product": "5033",
-    "id_category": "1",
+    "id_category": "1004",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 02:38",
@@ -36889,7 +36889,7 @@
   },
   {
     "id_product": "5034",
-    "id_category": "1",
+    "id_category": "26",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 02:42",
@@ -36897,7 +36897,7 @@
   },
   {
     "id_product": "5035",
-    "id_category": "1",
+    "id_category": "26",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 02:46",
@@ -36905,7 +36905,7 @@
   },
   {
     "id_product": "5036",
-    "id_category": "1",
+    "id_category": "26",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 02:51",
@@ -36913,7 +36913,7 @@
   },
   {
     "id_product": "5037",
-    "id_category": "1",
+    "id_category": "752",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 20:05",
@@ -36921,7 +36921,7 @@
   },
   {
     "id_product": "5038",
-    "id_category": "1",
+    "id_category": "752",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 20:19",
@@ -36937,7 +36937,7 @@
   },
   {
     "id_product": "5040",
-    "id_category": "1",
+    "id_category": "752",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 20:24",
@@ -36953,7 +36953,7 @@
   },
   {
     "id_product": "5042",
-    "id_category": "1",
+    "id_category": "752",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 20:58",
@@ -36961,7 +36961,7 @@
   },
   {
     "id_product": "5043",
-    "id_category": "1",
+    "id_category": "752",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 21:10",
@@ -36969,7 +36969,7 @@
   },
   {
     "id_product": "5044",
-    "id_category": "1",
+    "id_category": "752",
     "on_sale": "0",
     "status": "1",
     "created_at": "12/09/2019 23:59",
@@ -37001,7 +37001,7 @@
   },
   {
     "id_product": "5048",
-    "id_category": "1",
+    "id_category": "780",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 18:59",
@@ -37009,7 +37009,7 @@
   },
   {
     "id_product": "5049",
-    "id_category": "1",
+    "id_category": "780",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 19:26",
@@ -37017,7 +37017,7 @@
   },
   {
     "id_product": "5050",
-    "id_category": "1",
+    "id_category": "780",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 19:37",
@@ -37025,7 +37025,7 @@
   },
   {
     "id_product": "5051",
-    "id_category": "6",
+    "id_category": "780",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 19:41",
@@ -37033,7 +37033,7 @@
   },
   {
     "id_product": "5052",
-    "id_category": "1",
+    "id_category": "1161",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 20:27",
@@ -37041,7 +37041,7 @@
   },
   {
     "id_product": "5055",
-    "id_category": "1",
+    "id_category": "1161",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 21:42",
@@ -37049,7 +37049,7 @@
   },
   {
     "id_product": "5054",
-    "id_category": "1",
+    "id_category": "1161",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 20:36",
@@ -37057,7 +37057,7 @@
   },
   {
     "id_product": "5056",
-    "id_category": "1",
+    "id_category": "1161",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 21:57",
@@ -37065,7 +37065,7 @@
   },
   {
     "id_product": "5057",
-    "id_category": "987",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 23:07",
@@ -37073,7 +37073,7 @@
   },
   {
     "id_product": "5058",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 23:10",
@@ -37081,7 +37081,7 @@
   },
   {
     "id_product": "5059",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 23:13",
@@ -37089,7 +37089,7 @@
   },
   {
     "id_product": "5060",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 23:19",
@@ -37097,7 +37097,7 @@
   },
   {
     "id_product": "5061",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 23:30",
@@ -37105,7 +37105,7 @@
   },
   {
     "id_product": "5062",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 23:33",
@@ -37113,7 +37113,7 @@
   },
   {
     "id_product": "5063",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "13/09/2019 23:39",
@@ -37121,7 +37121,7 @@
   },
   {
     "id_product": "5064",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "14/09/2019 00:04",
@@ -37137,7 +37137,7 @@
   },
   {
     "id_product": "5066",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "15/09/2019 19:34",
@@ -37145,7 +37145,7 @@
   },
   {
     "id_product": "5067",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "15/09/2019 19:38",
@@ -37153,7 +37153,7 @@
   },
   {
     "id_product": "5068",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "15/09/2019 19:44",
@@ -37161,7 +37161,7 @@
   },
   {
     "id_product": "5069",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "15/09/2019 19:54",
@@ -37169,7 +37169,7 @@
   },
   {
     "id_product": "5070",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "15/09/2019 19:56",
@@ -37177,7 +37177,7 @@
   },
   {
     "id_product": "5071",
-    "id_category": "1",
+    "id_category": "771",
     "on_sale": "0",
     "status": "1",
     "created_at": "15/09/2019 19:58",
@@ -42265,7 +42265,7 @@
   },
   {
     "id_product": "5755",
-    "id_category": "1",
+    "id_category": "1056",
     "on_sale": "0",
     "status": "1",
     "created_at": "16/02/2021 01:26",
