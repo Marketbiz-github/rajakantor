@@ -30,6 +30,10 @@
 
   @yield('style')
 
+  <style>
+    [x-cloak] { display: none !important; }
+  </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWGBMS9E1M"></script>
   <script>
@@ -130,7 +134,7 @@
   </div>
 
   {{-- 3 COLUMN LAYOUT --}}
-  <div class="grid grid-cols-[220px_1fr_260px] gap-[5px] p-2
+  <div class="grid grid-cols-[220px_1.5fr_200px] gap-[5px] p-2
               max-[1040px]:grid-cols-1 max-[1040px]:gap-4">
 
     {{-- LEFT SIDEBAR --}}
