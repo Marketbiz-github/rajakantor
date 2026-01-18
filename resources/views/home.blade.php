@@ -12,8 +12,8 @@
 
       {{-- PRODUCTS DISPLAY --}}
       <div class="mt-6">
-        <div class="flex flex-wrap justify-between items-center bg-[#acb0b8] px-3 py-2">
-          <div class="font-bold text-white mb-2 md:mb-0">PRODUCTS DISPLAY</div>
+        <div class="flex justify-between items-center bg-[#acb0b8] px-3 py-2">
+          <div class="font-bold text-white">PRODUCTS DISPLAY</div>
         </div>
 
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1 mt-3">

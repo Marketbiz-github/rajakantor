@@ -90,15 +90,15 @@
       <div class="font-bold text-base text-[#333] mb-4">{{ $product->name }}</div>
 
       <!-- Konten utama -->
-      <div class="flex flex-col md:flex-row gap-6">
+      <div class="flex flex-row gap-6">
         <!-- Kolom kiri: Gambar + tombol -->
-        <div class="flex flex-col items-center md:items-start gap-4 md:w-1/2">
+        <div class="flex flex-col items-center gap-4 w-1/2">
           @php
             $images = $product->images ?? [];
             $imageUrls = collect($images)->map(fn($i) => asset($i))->toArray();
           @endphp
 
-          <div x-data="{ active: 0, showZoom: false, imgs: {{ Js::from($imageUrls) }} }" class="w-[80%] md:w-full">
+          <div x-data="{ active: 0, showZoom: false, imgs: {{ Js::from($imageUrls) }} }" class="w-full">
             <div class="border border-gray-300 flex items-center justify-center bg-gray-100">
               <template x-if="imgs && imgs.length">
                 <img
