@@ -58,7 +58,7 @@
     </div>
 
     <nav class="bg-white">
-      <ul class="flex gap-2 p-[8px_12px] list-none m-0">
+      <ul class="flex gap-1 p-[8px_12px] list-none m-0">
         <li>
           <a href="{{ route('home') }}" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
             HOME
@@ -74,11 +74,11 @@
             BLOG
           </a>
         </li>
-        <li>
+        {{-- <li>
           <a href="{{ route('product.promo') }}" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
             PROMO
           </a>
-        </li>
+        </li> --}}
         <li>
           <a href="https://www.youtube.com/watch?v=n7XvnXJ70co" target="blank" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
             YOUTUBE
@@ -89,6 +89,15 @@
             E KATALOG
           </a>
         </li>
+        <li>
+          <a href="https://siplah.blibli.com/merchant-detail/SPRB-0017?itemPerPage=40&page=0&merchantId=SPRB-0017" target="blank" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
+            SIPLAH
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mbizmarket.co.id/p/rajabataviaperkasa" target="blank" class="block md:px-3 px-1 py-2 text-[#222] font-bold md:text-[12px] text-[10px] rounded">
+            MBIZ
+          </a>
       </ul>
     </nav>
 
