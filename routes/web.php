@@ -39,6 +39,10 @@ Route::middleware('auth')->prefix('dashboard')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    // Brand sync routes - auto-assign products to brand categories
+    Route::get('/sync-brands/preview', [App\Http\Controllers\Admin\BrandSyncController::class, 'preview'])->name('sync-brands.preview');
+    Route::get('/sync-brands', [App\Http\Controllers\Admin\BrandSyncController::class, 'sync'])->name('sync-brands.run');
 });
 
 require __DIR__.'/auth.php';

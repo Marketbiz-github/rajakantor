@@ -105,7 +105,48 @@ class CategoryController extends Controller
                 }
             });
         }
+        
+        // --- Fallback brand image logic if no category image file exists
+        $categoryImage = null;
+        $categoryPublicPath = 'images/category/' . $category->id_category . '.jpg';
+        $categoryStoragePath = 'storage/category/' . $category->id_category . '.jpg';
 
-        return view('category', compact('siteSettings', 'category', 'children', 'productsPaginated'));
+        if (file_exists(public_path($categoryStoragePath))) {
+            $categoryImage = asset($categoryStoragePath);
+        } elseif (file_exists(public_path($categoryPublicPath))) {
+            $categoryImage = asset($categoryPublicPath);
+        } else {
+            // Find a product with the same name that might have an image (e.g. ALBA, LION)
+            $brandProduct = DB::table('products')
+                ->where('status', 1)
+                ->whereRaw('LOWER(TRIM(name)) = ?', [strtolower(trim($category->name))])
+                ->first();
+
+            if ($brandProduct) {
+                $img = DB::table('images')
+                    ->where('id_product', $brandProduct->id_product)
+                    ->where('status', '1')
+                    ->where('position', '1')
+                    ->first();
+
+                if ($img) {
+                    $oldPath = public_path('images/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+                    $newPath = storage_path('app/public/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+
+                    if (file_exists($newPath)) {
+                        $categoryImage = asset('storage/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+                    } elseif (file_exists($oldPath)) {
+                        $categoryImage = asset('images/product/' . $img->id_product . '-' . $img->id_image . '.jpg');
+                    }
+                }
+            }
+            
+            // If still no image found, use default fallback
+            if (!$categoryImage) {
+                $categoryImage = asset('images/product/en.jpg');
+            }
+        }
+
+        return view('category', compact('siteSettings', 'category', 'children', 'productsPaginated', 'categoryImage'));
     }
 }

@@ -23,7 +23,7 @@
             <div class="font-bold text-[#333] mt-1">{{ $product->name }}</div>
             <img src="{{ $img ? asset($img) : asset('images/product/en.jpg') }}" alt="{{ $product->name }}"
                   class="w-[72px] h-[72px] object-contain mx-auto mt-2 mb-4" />
-            <a href="{{ url('/product/'.$product->id_product.'-'.$product->slug) }}" class="text-xs text-gray-600 hover:underline mt-1 block"><i class="fa-solid fa-eye mr-1"></i> View</a>
+            <a href="{{ $product->custom_url }}" class="text-xs text-gray-600 hover:underline mt-1 block"><i class="fa-solid fa-eye mr-1"></i> View</a>
           </div>
           @endforeach
         </div>

@@ -39,6 +39,34 @@ class ProductController extends Controller
             abort(404);
         }
 
+        // If this product represents a brand, redirect to the corresponding category page
+        $brandNames = [
+            'Alba', 'Lion', 'Brother', 'Chairman', 'Donati', 'Elite',
+            'Indachi', 'Daiko', 'Chitose', 'Uno', 'Modera', 'Savello',
+            'Ergotec', 'Erka', 'Daichiban', 'Carrera', 'Ichiban'
+        ];
+        
+        $isBrand = false;
+        foreach ($brandNames as $b) {
+            if (strcasecmp(trim($product->name), $b) === 0) {
+                $isBrand = true;
+                break;
+            }
+        }
+
+        if ($isBrand) {
+            $matchingCategory = DB::table('categories')
+                ->where('status', 1)
+                ->whereRaw('LOWER(TRIM(name)) = ?', [strtolower(trim($product->name))])
+                ->first();
+
+            if ($matchingCategory) {
+                return redirect()->route('category.show', [
+                    'slug' => $matchingCategory->id_category . '-' . $matchingCategory->slug
+                ], 302); // 302 redirect for flexible testing and caching prevention
+            }
+        }
+
         // Ambil images untuk produk
         $images = DB::table('images')
             ->where('id_product', $product->id_product)

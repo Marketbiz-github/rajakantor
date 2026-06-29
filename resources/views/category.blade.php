@@ -10,19 +10,7 @@
     {{ $category->meta_keywords ?? $siteSettings->meta_keywords }}
 @endsection
 @section('og_image')
-     @php
-          $publicPath = 'images/category/' . $category->id_category . '.jpg';
-          $storagePath = 'storage/category/' . $category->id_category . '.jpg';
-
-          if (file_exists(public_path($storagePath))) {
-              $imageUrl = asset($storagePath);
-          } elseif (file_exists(public_path($publicPath))) {
-              $imageUrl = asset($publicPath);
-          }  else {
-              $imageUrl = $siteSettings->logo;
-          }
-      @endphp
-    {{ $imageUrl }}
+    {{ $categoryImage ?? $siteSettings->logo }}
 @endsection
 
 @section('content')
@@ -88,23 +76,10 @@
     <div class="border-t pt-4">
       <div class="font-bold text-lg text-[#333] mb-4">{{ $category->name }}</div>
 
-      @php
-          $publicPath = 'images/category/' . $category->id_category . '.jpg';
-          $storagePath = 'storage/category/' . $category->id_category . '.jpg';
-
-          if (file_exists(public_path($storagePath))) {
-              $imageUrl = asset($storagePath);
-          } elseif (file_exists(public_path($publicPath))) {
-              $imageUrl = asset($publicPath);
-          }  else {
-              $imageUrl = asset('images/product/en.jpg');
-          }
-      @endphp
-
       <img 
-          src="{{ $imageUrl }}" 
+          src="{{ $categoryImage }}" 
           alt="{{ $category->name }}" 
-          class="w-full object-contain mb-4 border border-gray-300" 
+          class="w-[200px] md:w-[300px] object-contain mb-4 border border-gray-300" 
       />
 
 

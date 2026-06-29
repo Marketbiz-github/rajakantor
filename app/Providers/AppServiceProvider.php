@@ -48,9 +48,20 @@ class AppServiceProvider extends ServiceProvider
             }
             unset($cat);
 
-            // 4️⃣ Hubungkan kategori anak ke parent-nya
+            // 4️⃣ Hubungkan kategori anak ke parent-nya (Kecuali brand yang tampil di home)
+            $excludedBrands = [
+                'alba', 'lion', 'brother', 'chairman', 'donati', 'elite',
+                'indachi', 'daiko', 'chitose', 'uno', 'modera', 'savello',
+                'ergotec', 'erka', 'daichiban', 'carrera', 'ichiban', 'umo', 'megatec'
+            ];
             foreach ($relations as $rel) {
                 if (isset($categories[$rel->id_category]) && isset($categories[$rel->id_parent])) {
+                    if ($rel->id_parent == 1) {
+                        $catName = strtolower(trim($categories[$rel->id_category]->name));
+                        if (in_array($catName, $excludedBrands)) {
+                            continue;
+                        }
+                    }
                     $categories[$rel->id_parent]->children[] = $categories[$rel->id_category];
                 }
             }

@@ -32,12 +32,35 @@ class HomeController extends Controller
             ->where('position', '1')
             ->get();
 
-        // Mapping images ke produk
+        // Fetch matching brand categories to link directly to category pages
+        $brandNames = [
+            'Alba', 'Lion', 'Brother', 'Chairman', 'Donati', 'Elite',
+            'Indachi', 'Daiko', 'Chitose', 'Uno', 'Modera', 'Savello',
+            'Ergotec', 'Erka', 'Daichiban', 'Carrera', 'Ichiban'
+        ];
+        
+        $brandCategories = DB::table('categories')
+            ->where('status', 1)
+            ->whereIn(DB::raw('LOWER(TRIM(name))'), array_map('strtolower', $brandNames))
+            ->get()
+            ->keyBy(function($c) {
+                return strtolower(trim($c->name));
+            });
+
+        // Mapping images & urls ke produk
         foreach ($products as $product) {
             $productImages = $images->where('id_product', $product->id_product);
             $product->images = $productImages->map(function($img) {
                 return 'images/product/' . $img->id_product . '-' . $img->id_image . '.jpg';
             })->values()->all();
+
+            $productKey = strtolower(trim($product->name));
+            if (isset($brandCategories[$productKey])) {
+                $cat = $brandCategories[$productKey];
+                $product->custom_url = url('/category/' . $cat->id_category . '-' . $cat->slug);
+            } else {
+                $product->custom_url = url('/product/' . $product->id_product . '-' . $product->slug);
+            }
         }
 
         // dd($siteSettings, $products);
