@@ -16,201 +16,62 @@
             </a>
         </div>
 
-        <x-data-table 
-            :data="$categories"
-            :columns="[
-                ['key' => 'index', 'label' => 'No.', 'type' => 'index'],
-                ['key' => 'id_category', 'label' => 'ID', 'type' => 'text'],
-                ['key' => 'name', 'label' => 'Nama Kategori', 'type' => 'text'],
-                ['key' => 'slug', 'label' => 'Slug', 'type' => 'text'],
-                ['key' => 'status', 'label' => 'Status', 'type' => 'status'],
-                ['key' => 'updated_at', 'label' => 'Terakhir Diperbarui', 'type' => 'date'],
-            ]"
-            route-prefix="categories"
-            :searchable="true"
-            :search-fields="['name','id_category','slug']"
-            default-sort="name"
-            :default-per-page="10"
-            :custom-actions="[
-                [
-                    'label' => 'Edit',
-                    'url' => '/dashboard/category/{id}/edit',
-                    'target' => '',
-                    'class' => 'text-teal-600 hover:underline'
-                ],
-                [
-                    'label' => 'View',
-                    'url' => '/category/{id_category}-{slug}',
-                    'target' => '_blank',
-                    'class' => 'text-blue-600 hover:underline'
-                ]
-            ]"
-        />
+        <form method="GET" action="{{ route('category.index') }}" class="mb-4 flex gap-2">
+            <input type="text" name="search" value="{{ request('search') }}" placeholder="Cari ID atau Nama Kategori..." class="border border-gray-300 rounded px-3 py-2 w-64 md:w-1/3">
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Cari</button>
+            @if(request('search'))
+                <a href="{{ route('category.index') }}" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded flex items-center">Reset</a>
+            @endif
+        </form>
+
+        <div class="bg-white rounded-lg shadow-sm border overflow-x-auto">
+            <table class="w-full text-left border-collapse whitespace-nowrap">
+                <thead>
+                    <tr class="bg-gray-50 border-b border-gray-200 text-gray-600">
+                        <th class="p-4 text-sm font-semibold">No</th>
+                        <th class="p-4 text-sm font-semibold">ID</th>
+                        <th class="p-4 text-sm font-semibold">Nama Kategori</th>
+                        <th class="p-4 text-sm font-semibold">Slug</th>
+                        <th class="p-4 text-sm font-semibold">Status</th>
+                        <th class="p-4 text-sm font-semibold">Terakhir Diperbarui</th>
+                        <th class="p-4 text-sm font-semibold">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    @forelse($categories as $index => $item)
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-4 text-sm text-gray-700">{{ $categories->firstItem() + $index }}</td>
+                        <td class="p-4 text-sm text-gray-700">{{ $item->id_category }}</td>
+                        <td class="p-4 text-sm text-gray-900 font-medium whitespace-normal min-w-[200px]">{{ $item->name }}</td>
+                        <td class="p-4 text-sm text-gray-700">{{ $item->slug }}</td>
+                        <td class="p-4 text-sm">
+                            @if($item->status == 1)
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium text-green-700 bg-green-100 border border-green-200">Aktif</span>
+                            @else
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium text-red-700 bg-red-100 border border-red-200">Tidak Aktif</span>
+                            @endif
+                        </td>
+                        <td class="p-4 text-sm text-gray-700">{{ $item->updated_at ? date('d/m/Y H:i', strtotime($item->updated_at)) : '-' }}</td>
+                        <td class="p-4 text-sm flex gap-3">
+                            <a href="{{ url('/dashboard/category/'.$item->id.'/edit') }}" class="text-teal-600 hover:text-teal-800 font-medium"><i class="fas fa-edit mr-1"></i>Edit</a>
+                            <a href="{{ url('/category/'.$item->id_category.'-'.$item->slug) }}" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium"><i class="fas fa-external-link-alt mr-1"></i>View</a>
+                        </td>
+                    </tr>
+                    @empty
+                    <tr>
+                        <td colspan="7" class="p-8 text-center text-sm text-gray-500">
+                            <i class="fas fa-box-open text-3xl mb-3 text-gray-300 block"></i>
+                            Tidak ada data kategori ditemukan.
+                        </td>
+                    </tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-6">
+            {{ $categories->appends(['search' => request('search')])->links('components.pagination') }}
+        </div>
     </div>
 </div>
 @endsection
-
-@push('scripts')
-<script>
-document.addEventListener('alpine:init', () => {
-    Alpine.data('dataTable', ({
-        data = [],
-        columns = [],
-        hasActions = false,
-        routePrefix = '',
-        searchFields = ['name'],
-        defaultPerPage = 10,
-        customActions = []
-    }) => ({
-        data,
-        columns,
-        hasActions,
-        routePrefix,
-        searchFields,
-        search: '',
-        sortColumn: null,
-        sortAsc: false,
-        currentPage: 1,
-        perPage: defaultPerPage,
-        customActions,
-
-        get filteredData() {
-            let filtered = this.data;
-            if (this.search) {
-                const searchTerm = this.search.toLowerCase();
-                filtered = filtered.filter(item =>
-                    this.searchFields.some(field =>
-                        (item[field] || '').toString().toLowerCase().includes(searchTerm)
-                    )
-                );
-            }
-            filtered = filtered.sort((a, b) => {
-                if (!this.sortColumn) return 0;
-                let modifier = this.sortAsc ? 1 : -1;
-                let aVal = a[this.sortColumn];
-                let bVal = b[this.sortColumn];
-                if (!isNaN(aVal) && !isNaN(bVal)) {
-                    return (Number(aVal) - Number(bVal)) * modifier;
-                }
-                aVal = aVal?.toString().toLowerCase() ?? '';
-                bVal = bVal?.toString().toLowerCase() ?? '';
-                return aVal < bVal ? -1 * modifier : aVal > bVal ? 1 * modifier : 0;
-            });
-            return filtered;
-        },
-
-        get totalPages() {
-            return Math.ceil(this.filteredData.length / this.perPage);
-        },
-
-        get startIndex() {
-            return (this.currentPage - 1) * this.perPage;
-        },
-
-        get endIndex() {
-            return this.startIndex + this.perPage;
-        },
-
-        get paginatedData() {
-            return this.filteredData.slice(this.startIndex, this.endIndex).map((item, index) => ({
-                ...item,
-                index: this.startIndex + index + 1
-            }));
-        },
-
-        previousPage() {
-            if (this.currentPage > 1) this.currentPage--;
-        },
-
-        nextPage() {
-            if (this.currentPage < this.totalPages) this.currentPage++;
-        },
-
-        sort(column) {
-            if (this.sortColumn === column) {
-                this.sortAsc = !this.sortAsc;
-            } else {
-                this.sortColumn = column;
-                this.sortAsc = true;
-            }
-        },
-
-        formatColumnValue(item, column) {
-            const value = item[column.key];
-            switch (column.type) {
-                case 'index':
-                    return item.index;
-                case 'price':
-                    return this.formatPrice(value);
-                case 'date':
-                    return this.formatDate(value);
-                case 'status':
-                    return this.formatStatus(value);
-                default:
-                    return value ?? '';
-            }
-        },
-
-        formatDate(date) {
-            return date ? new Date(date).toLocaleDateString('id-ID') : '';
-        },
-
-        formatStatus(status) {
-            const statusClasses = {
-                1: 'text-green-600 bg-green-100',
-                2: 'text-red-600 bg-red-100'
-            };
-            return `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${statusClasses[status] || ''}">${status}</span>`;
-        },
-
-        displayedPages() {
-            const pages = [];
-            const maxPages = 7;
-            const total = this.totalPages;
-            
-            if (total <= maxPages) {
-                for (let i = 1; i <= total; i++) {
-                    pages.push(i);
-                }
-            } else {
-                const start = Math.max(1, this.currentPage - 1);
-                const end = Math.min(total, this.currentPage + 1);
-                
-                for (let i = 1; i <= 3; i++) {
-                    pages.push(i);
-                }
-                
-                if (start > 4) {
-                    pages.push('...');
-                }
-                
-                for (let i = start; i <= end; i++) {
-                    if (i > 3 && i < total - 2) {
-                        if (!pages.includes(i)) {
-                            pages.push(i);
-                        }
-                    }
-                }
-                
-                if (end < total - 3) {
-                    if (!pages.includes('...')) {
-                        pages.push('...');
-                    }
-                }
-                
-                for (let i = Math.max(1, total - 2); i <= total; i++) {
-                    if (!pages.includes(i)) {
-                        pages.push(i);
-                    }
-                }
-            }
-            
-            return pages;
-        },
-        
-    }));
-
-    window.dataTable = (config) => Alpine.reactive(Alpine.data('dataTable')(config));
-});
-</script>
-@endpush

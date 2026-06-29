@@ -30,10 +30,10 @@
             </div>
             <div class="mb-3">
                 <label class="block mb-2 text-sm">Kategori</label>
-                <select name="category" class="w-full border border-gray-300 rounded-lg px-3 py-2">
+                <select name="categories[]" multiple class="w-full border border-gray-300 rounded-lg px-3 py-2 select2-multiple">
                     <option value="">-- Pilih Kategori --</option>
                     @foreach ($categories as $category)
-                        <option value="{{ $category->id_category }}" {{ (old('category') ?? $productCategory?->id_category) == $category->id_category ? 'selected' : '' }}>{{ $category->name }}</option>
+                        <option value="{{ $category->id_category }}" {{ (is_array(old('categories')) ? in_array($category->id_category, old('categories')) : in_array($category->id_category, $productCategories ?? [])) ? 'selected' : '' }}>{{ $category->name }}</option>
                     @endforeach
                 </select>
             </div>
@@ -131,6 +131,9 @@
 @endsection
 
 @push('scripts')
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="{{ asset('vendor/tinymce/tinymce.min.js') }}"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -140,6 +143,13 @@ document.addEventListener('DOMContentLoaded', function () {
         plugins: 'link lists code',
         toolbar: 'undo redo | bold italic underline | bullist numlist | link | code',
         height: 250
+    });
+});
+
+$(document).ready(function() {
+    $('.select2-multiple').select2({
+        placeholder: "Cari dan pilih kategori...",
+        allowClear: true
     });
 });
 </script>

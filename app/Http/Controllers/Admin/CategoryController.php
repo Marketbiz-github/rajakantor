@@ -15,12 +15,21 @@ class CategoryController extends Controller
     /**
      * Display a listing of categories
      */
-    public function index()
+    public function index(Request $request)
     {
-        $categories = DB::table('categories')
+        $query = DB::table('categories')
             ->leftJoin('category_parents', 'categories.id_category', '=', 'category_parents.id_category')
-            ->whereIn('categories.status', [1, 2])
-            ->orderBy('categories.updated_at', 'desc')
+            ->whereIn('categories.status', [1, 2]);
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where(function($q) use ($search) {
+                $q->where('categories.name', 'like', "%{$search}%")
+                  ->orWhere('categories.id_category', 'like', "%{$search}%");
+            });
+        }
+
+        $categories = $query->orderBy('categories.updated_at', 'desc')
             ->select(
                 'categories.id',
                 'categories.id_category',
@@ -29,7 +38,7 @@ class CategoryController extends Controller
                 'categories.status',
                 'categories.updated_at'
             )
-            ->get();
+            ->paginate(15);
 
         return view('admin.category', compact('categories'));
     }

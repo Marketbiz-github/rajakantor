@@ -13,15 +13,23 @@ use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $products = DB::table('products')
-            ->whereIn('status', [1, 2])
-            ->orderBy('updated_at', 'desc')
-            ->get();
+        $query = DB::table('products')
+            ->whereIn('status', [1, 2]);
+
+        if ($request->has('search') && $request->search != '') {
+            $search = $request->search;
+            $query->where(function($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                  ->orWhere('id_product', 'like', "%{$search}%");
+            });
+        }
+
+        $products = $query->orderBy('updated_at', 'desc')->paginate(15);
 
         // Add category name for each product
-        $products = $products->map(function ($product) {
+        $products->getCollection()->transform(function ($product) {
             $category = DB::table('product_categories')
                 ->join('categories', 'product_categories.id_category', '=', 'categories.id_category')
                 ->where('product_categories.id_product', $product->id_product)
@@ -81,7 +89,8 @@ class ProductController extends Controller
             'image1' => 'nullable|image|mimes:jpg|max:2048',
             'image2' => 'nullable|image|mimes:jpg|max:2048',
             'image3' => 'nullable|image|mimes:jpg|max:2048',
-            'category' => 'nullable|exists:categories,id',
+            'categories' => 'nullable|array',
+            'categories.*' => 'exists:categories,id_category',
         ];
 
         $validated = $request->validate($rules);
@@ -168,16 +177,20 @@ class ProductController extends Controller
             }
         }
 
-        // Link product to category if provided
-        if ($request->input('category')) {
-            DB::table('product_categories')->insert([
-                'id_product' => $newIdProduct,
-                'id_category' => $request->input('category'),
-                'on_sale' => '0',
-                'status' => '1',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
+        // Link product to categories if provided
+        if ($request->input('categories')) {
+            $catData = [];
+            foreach ($request->input('categories') as $catId) {
+                $catData[] = [
+                    'id_product' => $newIdProduct,
+                    'id_category' => $catId,
+                    'on_sale' => '0',
+                    'status' => '1',
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ];
+            }
+            DB::table('product_categories')->insert($catData);
         }
 
         return redirect()->route('product.index')->with('success', 'Produk berhasil dibuat. ID: ' . $newIdProduct);
@@ -200,13 +213,14 @@ class ProductController extends Controller
         $images = DB::table('images')->where('id_product', $product->id_product)->where('status', 1)->orderBy('position')->get();
 
         // Load current category assignment
-        $productCategory = DB::table('product_categories')
+        $productCategories = DB::table('product_categories')
             ->where('id_product', $product->id_product)
-            ->first();
+            ->pluck('id_category')
+            ->toArray();
 
-        // dd($productCategory);
+        // dd($productCategories);
 
-        return view('admin.product-edit', compact('product', 'categories', 'images', 'productCategory'));
+        return view('admin.product-edit', compact('product', 'categories', 'images', 'productCategories'));
     }
 
     /**
@@ -231,7 +245,8 @@ class ProductController extends Controller
             'image1' => 'nullable|image|mimes:jpg|max:2048',
             'image2' => 'nullable|image|mimes:jpg|max:2048',
             'image3' => 'nullable|image|mimes:jpg|max:2048',
-            'category' => 'nullable|exists:categories,id',
+            'categories' => 'nullable|array',
+            'categories.*' => 'exists:categories,id_category',
         ];
 
         $validated = $request->validate($rules);
@@ -320,33 +335,22 @@ class ProductController extends Controller
             }
         }
 
-        // Update category assignment
-        $existingCategory = DB::table('product_categories')
-            ->where('id_product', $product->id_product)
-            ->first();
-
-        if ($request->input('category')) {
-            if ($existingCategory) {
-                DB::table('product_categories')
-                    ->where('id_product', $product->id_product)
-                    ->update([
-                        'id_category' => $request->input('category'),
-                        'updated_at' => now(),
-                    ]);
-            } else {
-                DB::table('product_categories')->insert([
+        // Update category assignments
+        DB::table('product_categories')->where('id_product', $product->id_product)->delete();
+        
+        if ($request->input('categories')) {
+            $catData = [];
+            foreach ($request->input('categories') as $catId) {
+                $catData[] = [
                     'id_product' => $product->id_product,
-                    'id_category' => $request->input('category'),
+                    'id_category' => $catId,
                     'on_sale' => '0',
                     'status' => '1',
                     'created_at' => now(),
                     'updated_at' => now(),
-                ]);
+                ];
             }
-        } elseif ($existingCategory) {
-            DB::table('product_categories')
-                ->where('id_product', $product->id_product)
-                ->delete();
+            DB::table('product_categories')->insert($catData);
         }
 
         return redirect()->route('product.edit', [$id])->with('success', 'Produk berhasil diperbarui.');
