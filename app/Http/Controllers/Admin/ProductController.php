@@ -15,8 +15,13 @@ class ProductController extends Controller
 {
     public function index(Request $request)
     {
-        $query = DB::table('products')
-            ->whereIn('status', [1, 2]);
+        $query = DB::table('products');
+        
+        if ($request->has('status') && in_array($request->status, [1, 2, '1', '2'])) {
+            $query->where('status', $request->status);
+        } else {
+            $query->whereIn('status', [1, 2]);
+        }
 
         if ($request->has('search') && $request->search != '') {
             $search = $request->search;

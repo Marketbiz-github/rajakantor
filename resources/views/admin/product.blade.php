@@ -16,10 +16,17 @@
                 </a>
             </div>
 
-        <form method="GET" action="{{ route('product.index') }}" class="mb-4 flex gap-2">
-            <input type="text" name="search" value="{{ request('search') }}" placeholder="Cari ID atau Nama Produk..." class="border border-gray-300 rounded px-3 py-2 w-64 md:w-1/3">
-            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Cari</button>
-            @if(request('search'))
+        <form method="GET" action="{{ route('product.index') }}" class="mb-4 flex flex-wrap gap-2">
+            <input type="text" name="search" value="{{ request('search') }}" placeholder="Cari ID atau Nama Produk..." class="border border-gray-300 rounded px-3 py-2 w-full md:w-64">
+            
+            <select name="status" class="border border-gray-300 rounded px-3 py-2 w-full md:w-48">
+                <option value="">Semua Status</option>
+                <option value="1" {{ request('status') == '1' ? 'selected' : '' }}>Aktif</option>
+                <option value="2" {{ request('status') == '2' ? 'selected' : '' }}>Tidak Aktif</option>
+            </select>
+
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Filter</button>
+            @if(request('search') || request('status'))
                 <a href="{{ route('product.index') }}" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded flex items-center">Reset</a>
             @endif
         </form>
