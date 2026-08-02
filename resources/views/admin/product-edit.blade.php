@@ -8,7 +8,7 @@
 
     <div class="bg-white rounded-lg shadow-sm border p-8">
         <h2 class="text-xl font-bold mb-6">Edit Produk</h2>
-        <form method="POST" action="{{ route('product.update', [$product->id]) }}" enctype="multipart/form-data">
+        <form id="productForm" method="POST" action="{{ route('product.update', [$product->id]) }}" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
@@ -117,6 +117,7 @@
                 <select name="status" class="w-full border border-gray-300 rounded-lg px-3 py-2">
                     <option value="1" {{ old('status', $product->status) == 1 ? 'selected' : '' }}>Aktif</option>
                     <option value="2" {{ old('status', $product->status) == 2 ? 'selected' : '' }}>Tidak Aktif</option>
+                    <option value="hapus">Hapus</option>
                 </select>
             </div>
 
@@ -125,6 +126,18 @@
                 <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Simpan</button>
             </div>
         </form>
+    </div>
+</div>
+
+<!-- Modal Konfirmasi Hapus -->
+<div id="deleteModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/3 p-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Konfirmasi Hapus</h3>
+        <p class="text-gray-600 mb-6">Apakah Anda yakin ingin menghapus produk ini beserta seluruh datanya (gambar, dll)? Tindakan ini tidak dapat dibatalkan.</p>
+        <div class="flex justify-end">
+            <button type="button" id="cancelDelete" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded mr-2">Batal</button>
+            <button type="button" id="confirmDelete" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">Ya, Hapus Produk</button>
+        </div>
     </div>
 </div>
 
@@ -150,6 +163,29 @@ $(document).ready(function() {
     $('.select2-multiple').select2({
         placeholder: "Cari dan pilih kategori...",
         allowClear: true
+    });
+
+    // Modal Hapus Confirmation Logic
+    const form = document.getElementById('productForm');
+    const statusSelect = document.querySelector('select[name="status"]');
+    const deleteModal = document.getElementById('deleteModal');
+    const cancelDeleteBtn = document.getElementById('cancelDelete');
+    const confirmDeleteBtn = document.getElementById('confirmDelete');
+
+    form.addEventListener('submit', function (e) {
+        if (statusSelect.value === 'hapus') {
+            e.preventDefault(); // Stop form submission
+            deleteModal.classList.remove('hidden'); // Show modal
+        }
+    });
+
+    cancelDeleteBtn.addEventListener('click', function () {
+        deleteModal.classList.add('hidden'); // Hide modal
+    });
+
+    confirmDeleteBtn.addEventListener('click', function () {
+        deleteModal.classList.add('hidden');
+        form.submit(); // Submit form for real
     });
 });
 </script>

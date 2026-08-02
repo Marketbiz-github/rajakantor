@@ -241,7 +241,7 @@ class ProductController extends Controller
             'meta_title' => 'nullable|string',
             'meta_keywords' => 'nullable|string',
             'meta_description' => 'nullable|string',
-            'status' => 'required|in:1,2',
+            'status' => 'required|in:1,2,hapus',
             'image1' => 'nullable|image|mimes:jpg|max:2048',
             'image2' => 'nullable|image|mimes:jpg|max:2048',
             'image3' => 'nullable|image|mimes:jpg|max:2048',
@@ -250,6 +250,36 @@ class ProductController extends Controller
         ];
 
         $validated = $request->validate($rules);
+
+        if ($request->input('status') === 'hapus') {
+            // Delete product images physically
+            $productImages = DB::table('images')->where('id_product', $product->id_product)->get();
+            foreach ($productImages as $img) {
+                $filename = $product->id_product . '-' . $img->id_image . '.jpg';
+                
+                // Delete from storage
+                if (Storage::disk('public')->exists('product/' . $filename)) {
+                    Storage::disk('public')->delete('product/' . $filename);
+                }
+                
+                // Delete from public path just in case
+                $publicPath = public_path('images/product/' . $filename);
+                if (File::exists($publicPath)) {
+                    File::delete($publicPath);
+                }
+            }
+
+            // Delete from images table
+            DB::table('images')->where('id_product', $product->id_product)->delete();
+
+            // Delete from product_categories table
+            DB::table('product_categories')->where('id_product', $product->id_product)->delete();
+
+            // Delete from products table
+            DB::table('products')->where('id', $id)->delete();
+
+            return redirect()->route('product.index')->with('success', 'Produk berhasil dihapus beserta seluruh datanya.');
+        }
 
         // Update product
         $data = [
