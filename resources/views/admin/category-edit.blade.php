@@ -156,7 +156,10 @@
 
             <div class="flex justify-end mt-4">
                 <a href="{{ route('category.index') }}" class="bg-gray-400 text-white px-4 py-2 rounded mr-2">Batal</a>
-                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Simpan</button>
+                <button type="submit" id="btnSave" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded flex items-center gap-2">
+                    <span id="btnSaveText">Simpan</span>
+                    <span id="btnSaveIcon" class="hidden"><i class="fas fa-spinner fa-spin"></i></span>
+                </button>
             </div>
 
         </form>
@@ -202,11 +205,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 opts.classList.add('hidden');
             }
             
+            
             deleteModal.classList.remove('hidden');
+        } else {
+            // Normal save loading
+            let btn = document.getElementById('btnSave');
+            btn.disabled = true;
+            btn.classList.add('opacity-75', 'cursor-not-allowed');
+            document.getElementById('btnSaveText').innerText = 'Menyimpan...';
+            document.getElementById('btnSaveIcon').classList.remove('hidden');
         }
     });
 
     document.getElementById('confirmDelete').addEventListener('click', function () {
+        let btn = this;
+        let btnText = document.getElementById('confirmDeleteText');
+        let btnIcon = document.getElementById('confirmDeleteIcon');
+        
+        btn.disabled = true;
+        btn.classList.add('opacity-75', 'cursor-not-allowed');
+        btnText.innerText = 'Memproses...';
+        btnIcon.classList.remove('hidden');
+
         let deleteProducts = document.querySelector('input[name="product_action"]:checked') ? document.querySelector('input[name="product_action"]:checked').value : '0';
         document.getElementById('single-delete-products').value = deleteProducts;
         deleteModal.classList.add('hidden');
@@ -216,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <!-- Modal Peringatan -->
-<div id="alertModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black bg-opacity-50">
+<div id="alertModal" class="fixed inset-0 lg:left-72 z-[9999] hidden flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/3 p-6">
         <h3 class="text-xl font-bold text-gray-800 mb-4">Peringatan</h3>
         <p id="alertModalText" class="text-gray-600 mb-6">Pesan peringatan.</p>
@@ -227,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 
 <!-- Modal Konfirmasi Hapus Lanjutan -->
-<div id="deleteModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black bg-opacity-50">
+<div id="deleteModal" class="fixed inset-0 lg:left-72 z-[9999] hidden flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/3 p-6">
         <h3 class="text-xl font-bold text-gray-800 mb-4">Konfirmasi Hapus</h3>
         <p class="text-gray-600 mb-4">Apakah Anda yakin ingin menghapus kategori ini?</p>
@@ -246,7 +266,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         <div class="flex justify-end">
             <button type="button" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded mr-2" onclick="document.getElementById('deleteModal').classList.add('hidden')">Batal</button>
-            <button type="button" id="confirmDelete" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">Ya, Lanjutkan</button>
+            <button type="button" id="confirmDelete" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center gap-2">
+                <span id="confirmDeleteText">Ya, Lanjutkan</span>
+                <span id="confirmDeleteIcon" class="hidden"><i class="fas fa-spinner fa-spin"></i></span>
+            </button>
         </div>
     </div>
 </div>

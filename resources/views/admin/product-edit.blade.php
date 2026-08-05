@@ -123,20 +123,26 @@
 
             <div class="flex justify-end mt-4">
                 <a href="{{ route('product.index') }}" class="bg-gray-400 text-white px-4 py-2 rounded mr-2">Batal</a>
-                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Simpan</button>
+                <button type="submit" id="btnSave" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded flex items-center gap-2">
+                    <span id="btnSaveText">Simpan</span>
+                    <span id="btnSaveIcon" class="hidden"><i class="fas fa-spinner fa-spin"></i></span>
+                </button>
             </div>
         </form>
     </div>
 </div>
 
 <!-- Modal Konfirmasi Hapus -->
-<div id="deleteModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black bg-opacity-50">
+<div id="deleteModal" class="fixed inset-0 lg:left-72 z-[9999] hidden flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/3 p-6">
         <h3 class="text-xl font-bold text-gray-800 mb-4">Konfirmasi Hapus</h3>
         <p class="text-gray-600 mb-6">Apakah Anda yakin ingin menghapus produk ini beserta seluruh datanya (gambar, dll)? Tindakan ini tidak dapat dibatalkan.</p>
         <div class="flex justify-end">
             <button type="button" id="cancelDelete" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded mr-2">Batal</button>
-            <button type="button" id="confirmDelete" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">Ya, Hapus Produk</button>
+            <button type="button" id="confirmDelete" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center gap-2">
+                <span id="confirmDeleteText">Ya, Hapus Produk</span>
+                <span id="confirmDeleteIcon" class="hidden"><i class="fas fa-spinner fa-spin"></i></span>
+            </button>
         </div>
     </div>
 </div>
@@ -176,6 +182,12 @@ $(document).ready(function() {
         if (statusSelect.value === 'hapus') {
             e.preventDefault(); // Stop form submission
             deleteModal.classList.remove('hidden'); // Show modal
+        } else {
+            let btn = document.getElementById('btnSave');
+            btn.disabled = true;
+            btn.classList.add('opacity-75', 'cursor-not-allowed');
+            document.getElementById('btnSaveText').innerText = 'Menyimpan...';
+            document.getElementById('btnSaveIcon').classList.remove('hidden');
         }
     });
 
@@ -184,7 +196,15 @@ $(document).ready(function() {
     });
 
     confirmDeleteBtn.addEventListener('click', function () {
-        deleteModal.classList.add('hidden');
+        let btn = this;
+        let btnText = document.getElementById('confirmDeleteText');
+        let btnIcon = document.getElementById('confirmDeleteIcon');
+        
+        btn.disabled = true;
+        btn.classList.add('opacity-75', 'cursor-not-allowed');
+        btnText.innerText = 'Memproses...';
+        btnIcon.classList.remove('hidden');
+
         form.submit(); // Submit form for real
     });
 });

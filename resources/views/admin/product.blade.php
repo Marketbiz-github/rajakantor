@@ -104,19 +104,22 @@
 </form>
 
 <!-- Modal Konfirmasi Hapus -->
-<div id="deleteModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black bg-opacity-50">
+<div id="deleteModal" class="fixed inset-0 lg:left-72 z-[9999] hidden flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/3 p-6">
         <h3 class="text-xl font-bold text-gray-800 mb-4">Konfirmasi Hapus</h3>
         <p id="deleteModalText" class="text-gray-600 mb-6">Apakah Anda yakin ingin menghapus produk ini beserta seluruh datanya? Tindakan ini tidak dapat dibatalkan.</p>
         <div class="flex justify-end">
             <button type="button" id="cancelDelete" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded mr-2" onclick="document.getElementById('deleteModal').classList.add('hidden')">Batal</button>
-            <button type="button" id="confirmDelete" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">Ya, Hapus Produk</button>
+            <button type="button" id="confirmDelete" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded flex items-center gap-2">
+                <span id="confirmDeleteText">Ya, Hapus Produk</span>
+                <span id="confirmDeleteIcon" class="hidden"><i class="fas fa-spinner fa-spin"></i></span>
+            </button>
         </div>
     </div>
 </div>
 
 <!-- Modal Peringatan -->
-<div id="alertModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black bg-opacity-50">
+<div id="alertModal" class="fixed inset-0 lg:left-72 z-[9999] hidden flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/3 p-6">
         <h3 class="text-xl font-bold text-gray-800 mb-4">Peringatan</h3>
         <p id="alertModalText" class="text-gray-600 mb-6">Pesan peringatan.</p>
@@ -158,6 +161,15 @@
     }
 
     document.getElementById('confirmDelete').addEventListener('click', function() {
+        let btn = this;
+        let btnText = document.getElementById('confirmDeleteText');
+        let btnIcon = document.getElementById('confirmDeleteIcon');
+        
+        btn.disabled = true;
+        btn.classList.add('opacity-75', 'cursor-not-allowed');
+        btnText.innerText = 'Memproses...';
+        btnIcon.classList.remove('hidden');
+
         if(actionToConfirm === 'bulk') {
             document.getElementById('bulk-delete-form').submit();
         } else if(actionToConfirm === 'single') {
