@@ -390,4 +390,69 @@ class ProductController extends Controller
 
         return redirect()->route('product.edit', [$id])->with('success', 'Produk berhasil diperbarui.');
     }
+
+    /**
+     * Delete product completely
+     */
+    public function destroy($id)
+    {
+        $product = DB::table('products')->where('id', $id)->first();
+        if (!$product) {
+            return redirect()->route('product.index')->with('error', 'Produk tidak ditemukan.');
+        }
+
+        $this->deleteProductData($product);
+
+        return redirect()->route('product.index')->with('success', 'Produk berhasil dihapus beserta seluruh datanya.');
+    }
+
+    /**
+     * Bulk delete products
+     */
+    public function bulkDestroy(Request $request)
+    {
+        $ids = $request->input('ids');
+        if (empty($ids) || !is_array($ids)) {
+            return redirect()->route('product.index')->with('error', 'Tidak ada produk yang dipilih.');
+        }
+
+        $products = DB::table('products')->whereIn('id', $ids)->get();
+        foreach ($products as $product) {
+            $this->deleteProductData($product);
+        }
+
+        return redirect()->route('product.index')->with('success', count($products) . ' produk berhasil dihapus.');
+    }
+
+    /**
+     * Helper to delete product and its images/relations
+     */
+    private function deleteProductData($product)
+    {
+        // Delete product images physically
+        $productImages = DB::table('images')->where('id_product', $product->id_product)->get();
+        foreach ($productImages as $img) {
+            $filename = $product->id_product . '-' . $img->id_image . '.jpg';
+            
+            // Delete from storage
+            if (Storage::disk('public')->exists('product/' . $filename)) {
+                Storage::disk('public')->delete('product/' . $filename);
+            }
+            
+            // Delete from public path just in case
+            $publicPath = public_path('images/product/' . $filename);
+            if (File::exists($publicPath)) {
+                File::delete($publicPath);
+            }
+        }
+
+        // Delete from images table
+        DB::table('images')->where('id_product', $product->id_product)->delete();
+
+        // Delete from product_categories table
+        DB::table('product_categories')->where('id_product', $product->id_product)->delete();
+
+        // Delete from products table
+        DB::table('products')->where('id', $product->id)->delete();
+    }
 }
