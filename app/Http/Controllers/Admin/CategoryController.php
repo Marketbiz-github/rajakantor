@@ -19,13 +19,19 @@ class CategoryController extends Controller
     {
         $query = DB::table('categories')
             ->leftJoin('category_parents', 'categories.id_category', '=', 'category_parents.id_category')
-            ->whereIn('categories.status', [1, 2]);
+            ->leftJoin('categories as parents', 'category_parents.id_parent', '=', 'parents.id_category');
+
+        if ($request->has('status') && in_array($request->status, [1, 2, '1', '2'])) {
+            $query->where('categories.status', $request->status);
+        } else {
+            $query->whereIn('categories.status', [1, 2]);
+        }
 
         if ($request->has('search') && $request->search != '') {
             $search = $request->search;
             $query->where(function($q) use ($search) {
-                $q->where('categories.name', 'like', "%{$search}%")
-                  ->orWhere('categories.id_category', 'like', "%{$search}%");
+                $q->where('categories.id_category', 'like', "%{$search}%")
+                  ->orWhere('categories.name', 'like', "%{$search}%");
             });
         }
 
@@ -34,11 +40,28 @@ class CategoryController extends Controller
                 'categories.id',
                 'categories.id_category',
                 'categories.name',
+                'parents.name as parent_name',
                 'categories.slug',
                 'categories.status',
                 'categories.updated_at'
             )
             ->paginate(15);
+
+        $categories->getCollection()->transform(function ($category) {
+            $children = DB::table('category_parents')
+                ->join('categories', 'category_parents.id_category', '=', 'categories.id_category')
+                ->where('id_parent', $category->id_category)
+                ->pluck('categories.name');
+                
+            $category->child_count = $children->count();
+            $category->children_names = $children->implode(', ');
+                
+            $category->product_count = DB::table('product_categories')
+                ->where('id_category', $category->id_category)
+                ->count();
+                
+            return $category;
+        });
 
         return view('admin.category', compact('categories'));
     }
@@ -164,9 +187,18 @@ class CategoryController extends Controller
                 ->first();
         }
 
-        // dd($category, $parentCategory);
+        // Get counts for delete validation
+        $children = DB::table('category_parents')
+            ->join('categories', 'category_parents.id_category', '=', 'categories.id_category')
+            ->where('id_parent', $category->id_category)
+            ->pluck('categories.name');
+            
+        $childCount = $children->count();
+        $childrenNames = $children->implode(', ');
+            
+        $productCount = DB::table('product_categories')->where('id_category', $category->id_category)->count();
 
-        return view('admin.category-edit', compact('category', 'categories', 'parentCategory'));
+        return view('admin.category-edit', compact('category', 'categories', 'parentCategory', 'childCount', 'productCount', 'childrenNames'));
     }
 
     /**
@@ -191,10 +223,22 @@ class CategoryController extends Controller
             'meta_description' => 'nullable|string',
             'category_parent' => 'nullable|exists:categories,id_category',
             'image' => 'nullable|image|mimes:jpg|max:2048',
-            'status' => 'required|in:1,2',
+            'status' => 'required|in:1,2,hapus',
         ];
 
         $validated = $request->validate($rules);
+
+        if ($request->input('status') === 'hapus') {
+            $childCount = DB::table('category_parents')->where('id_parent', $category->id_category)->count();
+            if ($childCount > 0) {
+                return redirect()->back()->with('error', 'Gagal: Kategori ini memiliki subkategori. Hapus subkategori terlebih dahulu.');
+            }
+            
+            $deleteProducts = $request->input('delete_products') == '1';
+            $this->deleteCategoryData($category, $deleteProducts);
+
+            return redirect()->route('category.index')->with('success', 'Kategori berhasil dihapus.');
+        }
 
         $categoryData = [
             'name' => $request->input('name'),
@@ -262,5 +306,112 @@ class CategoryController extends Controller
         }
 
         return redirect()->route('category.edit', [$id])->with('success', 'Kategori berhasil diperbarui');
+    }
+
+    /**
+     * Delete category completely
+     */
+    public function destroy(Request $request, $id)
+    {
+        $category = DB::table('categories')->where('id', $id)->first();
+        if (!$category) {
+            return redirect()->route('category.index')->with('error', 'Kategori tidak ditemukan.');
+        }
+
+        // Validate children first
+        $childCount = DB::table('category_parents')->where('id_parent', $category->id_category)->count();
+        if ($childCount > 0) {
+            return redirect()->route('category.index')->with('error', 'Gagal: Kategori ini memiliki subkategori. Hapus subkategori terlebih dahulu.');
+        }
+
+        $deleteProducts = $request->input('delete_products') == '1';
+        $this->deleteCategoryData($category, $deleteProducts);
+
+        return redirect()->route('category.index')->with('success', 'Kategori berhasil dihapus.');
+    }
+
+    /**
+     * Bulk delete categories
+     */
+    public function bulkDestroy(Request $request)
+    {
+        $ids = $request->input('ids');
+        if (empty($ids) || !is_array($ids)) {
+            return redirect()->route('category.index')->with('error', 'Tidak ada kategori yang dipilih.');
+        }
+
+        $deleteProducts = $request->input('delete_products') == '1';
+        $categories = DB::table('categories')->whereIn('id', $ids)->get();
+        $deletedCount = 0;
+
+        foreach ($categories as $category) {
+            $childCount = DB::table('category_parents')->where('id_parent', $category->id_category)->count();
+            if ($childCount == 0) {
+                $this->deleteCategoryData($category, $deleteProducts);
+                $deletedCount++;
+            }
+        }
+
+        if ($deletedCount < count($categories)) {
+            return redirect()->route('category.index')->with('success', $deletedCount . ' kategori berhasil dihapus. Beberapa dilewati karena memiliki subkategori.');
+        }
+
+        return redirect()->route('category.index')->with('success', $deletedCount . ' kategori berhasil dihapus.');
+    }
+
+    /**
+     * Helper to delete category and its relations/images, and optionally products
+     */
+    private function deleteCategoryData($category, $deleteProducts = false)
+    {
+        if ($deleteProducts) {
+            // Get all products that belong to this category
+            $productIds = DB::table('product_categories')
+                ->where('id_category', $category->id_category)
+                ->pluck('id_product');
+
+            if ($productIds->isNotEmpty()) {
+                // Delete product images physically
+                $productImages = DB::table('images')->whereIn('id_product', $productIds)->get();
+                foreach ($productImages as $img) {
+                    $filename = $img->id_product . '-' . $img->id_image . '.jpg';
+                    if (Storage::disk('public')->exists('product/' . $filename)) {
+                        Storage::disk('public')->delete('product/' . $filename);
+                    }
+                    $publicPath = public_path('images/product/' . $filename);
+                    if (File::exists($publicPath)) {
+                        File::delete($publicPath);
+                    }
+                }
+
+                // Delete from product-related tables
+                DB::table('images')->whereIn('id_product', $productIds)->delete();
+                DB::table('product_categories')->whereIn('id_product', $productIds)->delete();
+                
+                // Get internal IDs for deleting from 'products' table
+                $products = DB::table('products')->whereIn('id_product', $productIds)->pluck('id');
+                DB::table('products')->whereIn('id', $products)->delete();
+            }
+        } else {
+            // Just delete the relation to this category
+            DB::table('product_categories')->where('id_category', $category->id_category)->delete();
+        }
+
+        // Delete category image physically
+        $filename = $category->id_category . '.jpg';
+        if (Storage::disk('public')->exists('category/' . $filename)) {
+            Storage::disk('public')->delete('category/' . $filename);
+        }
+        $publicPath = public_path('images/category/' . $filename);
+        if (File::exists($publicPath)) {
+            File::delete($publicPath);
+        }
+
+        // Delete category relationships
+        DB::table('category_parents')->where('id_category', $category->id_category)->delete();
+        DB::table('category_parents')->where('id_parent', $category->id_category)->delete();
+
+        // Delete category itself
+        DB::table('categories')->where('id', $category->id)->delete();
     }
 }

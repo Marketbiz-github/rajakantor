@@ -145,11 +145,14 @@
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option value="1" {{ old('status', $category->status) == '1' ? 'selected' : '' }}>Aktif</option>
                     <option value="2" {{ old('status', $category->status) == '2' ? 'selected' : '' }}>Tidak Aktif</option>
+                    <option value="hapus">Hapus</option>
                 </select>
                 @error('status')
                     <span class="text-red-500 text-sm mt-1">{{ $message }}</span>
                 @enderror
             </div>
+
+            <input type="hidden" name="delete_products" id="single-delete-products" value="0">
 
             <div class="flex justify-end mt-4">
                 <a href="{{ route('category.index') }}" class="bg-gray-400 text-white px-4 py-2 rounded mr-2">Batal</a>
@@ -172,6 +175,79 @@ document.addEventListener('DOMContentLoaded', function () {
         toolbar: 'undo redo | bold italic underline | bullist numlist | link | code',
         height: 250
     });
+
+    const form = document.querySelector('form.space-y-6');
+    const statusSelect = document.getElementById('status');
+    const deleteModal = document.getElementById('deleteModal');
+    const alertModal = document.getElementById('alertModal');
+    const childCount = {{ $childCount ?? 0 }};
+    const productCount = {{ $productCount ?? 0 }};
+    const childrenNames = '{!! addslashes($childrenNames ?? '') !!}';
+
+    form.addEventListener('submit', function (e) {
+        if (statusSelect.value === 'hapus') {
+            e.preventDefault();
+            
+            if (childCount > 0) {
+                let childNamesStr = childrenNames ? ' <strong class="text-red-600">(' + childrenNames + ')</strong>' : '';
+                document.getElementById('alertModalText').innerHTML = 'Kategori ini memiliki subkategori' + childNamesStr + '. Silakan hapus subkategori di dalamnya terlebih dahulu!';
+                alertModal.classList.remove('hidden');
+                return;
+            }
+
+            let opts = document.getElementById('deleteOptions');
+            if(productCount > 0) {
+                opts.classList.remove('hidden');
+            } else {
+                opts.classList.add('hidden');
+            }
+            
+            deleteModal.classList.remove('hidden');
+        }
+    });
+
+    document.getElementById('confirmDelete').addEventListener('click', function () {
+        let deleteProducts = document.querySelector('input[name="product_action"]:checked') ? document.querySelector('input[name="product_action"]:checked').value : '0';
+        document.getElementById('single-delete-products').value = deleteProducts;
+        deleteModal.classList.add('hidden');
+        form.submit();
+    });
 });
 </script>
+
+<!-- Modal Peringatan -->
+<div id="alertModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/3 p-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Peringatan</h3>
+        <p id="alertModalText" class="text-gray-600 mb-6">Pesan peringatan.</p>
+        <div class="flex justify-end">
+            <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded" onclick="document.getElementById('alertModal').classList.add('hidden')">Tutup</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Konfirmasi Hapus Lanjutan -->
+<div id="deleteModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/3 p-6">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Konfirmasi Hapus</h3>
+        <p class="text-gray-600 mb-4">Apakah Anda yakin ingin menghapus kategori ini?</p>
+        
+        <div id="deleteOptions" class="hidden mb-6 bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+            <p class="text-sm text-yellow-800 mb-3 font-medium">Kategori ini masih berisi produk. Pilih tindakan untuk produk tersebut:</p>
+            <label class="flex items-start gap-2 mb-2 cursor-pointer">
+                <input type="radio" name="product_action" value="0" class="mt-1" checked>
+                <span class="text-sm text-gray-700">Hanya hapus kategori (produk tetap ada, relasi kategori dilepas)</span>
+            </label>
+            <label class="flex items-start gap-2 cursor-pointer">
+                <input type="radio" name="product_action" value="1" class="mt-1 text-red-600">
+                <span class="text-sm text-red-700 font-medium">Hapus kategori BESERTA semua produk di dalamnya</span>
+            </label>
+        </div>
+
+        <div class="flex justify-end">
+            <button type="button" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded mr-2" onclick="document.getElementById('deleteModal').classList.add('hidden')">Batal</button>
+            <button type="button" id="confirmDelete" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">Ya, Lanjutkan</button>
+        </div>
+    </div>
+</div>
 @endpush

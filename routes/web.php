@@ -32,6 +32,8 @@ Route::middleware('auth')->prefix('dashboard')->group(function () {
     Route::post('/category', [App\Http\Controllers\Admin\CategoryController::class, 'store'])->name('category.store');
     Route::get('/category/{id}/edit', [App\Http\Controllers\Admin\CategoryController::class, 'edit'])->name('category.edit');
     Route::put('/category/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'update'])->name('category.update');
+    Route::delete('/category/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'destroy'])->name('category.destroy');
+    Route::post('/category/bulk-delete', [App\Http\Controllers\Admin\CategoryController::class, 'bulkDestroy'])->name('category.bulk-destroy');
 
     Route::put('/settings', [App\Http\Controllers\Admin\SiteSettingController::class, 'update'])->name('settings.update');
 
